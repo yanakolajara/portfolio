@@ -5,16 +5,15 @@ export default function Navbar() {
   return (
     <nav className='navbar container-glass'>
       <div className='portfolio-sections'>
-        <a>Home</a>
-        <a>More about me</a>
-        <a>Projects in development</a>
-        <a>Favorite resources</a>
+        <a href='/'>Home</a>
+        <a href='/about-me'>More about me</a>
+        <a href='/favorite-resources'>Favorite resources</a>
       </div>
       <div className='contact-links'>
-        <a>GitHub</a>
-        <a>LinkedIn</a>
-        <a>Blog</a>
-        <a>Download CV</a>
+        <a href='/'>GitHub</a>
+        <a href='/'>LinkedIn</a>
+        <a href='/'>Blog</a>
+        <a href='/'>Download CV</a>
       </div>
     </nav>
   );

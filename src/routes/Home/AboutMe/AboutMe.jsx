@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutMe.scss';
 
 export default function AboutMe() {
-  const myPicture = require('../../../Assets/MyPicture.jpg');
+  const myPicture = require('../../../assets/MyPicture.jpg');
   return (
     <div className='about-me container-glass'>
       <div className='profile-picture'>

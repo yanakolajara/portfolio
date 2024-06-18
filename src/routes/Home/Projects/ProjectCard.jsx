@@ -6,9 +6,16 @@ import Links from './Links';
 import Tools from './Tools';
 
 export default function ProjectCard({ data }) {
-  const { name, snapshot, description, variables, tools, links } = data;
+  const {
+    name,
+    snapshot,
+    description,
+    // variables,
+    tools,
+    links,
+  } = data;
   const [selected, setSelected] = React.useState('Description');
-  const projectSnapshot = require(`../../../Assets/${
+  const projectSnapshot = require(`../../../assets/${
     snapshot || 'image-placeholder.jpg'
   }`);
   return (
@@ -22,7 +29,7 @@ export default function ProjectCard({ data }) {
       </div>
 
       <p className='project-title'>{name}</p>
-      <div className='project-details'>
+      <div className='project-details scroll-container'>
         {selected === 'Description' && (
           <Description description={description} />
         )}
