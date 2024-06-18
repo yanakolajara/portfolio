@@ -1,7 +1,8 @@
+import React from 'react';
 import { Routes, Route } from 'react-router';
 import Home from './routes/Home/Home';
-import './App.scss';
 import Navbar from './components/Navbar';
+import './App.scss';
 
 function App() {
   return (

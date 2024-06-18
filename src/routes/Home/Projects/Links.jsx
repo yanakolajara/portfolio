@@ -4,7 +4,11 @@ export default function Links({ links }) {
   const displayLinks = () => {
     const linksArr = [];
     for (const [key, value] of Object.entries(links)) {
-      linksArr.push(<a>{value}</a>);
+      linksArr.push(
+        <a className={key} href={value}>
+          {value}
+        </a>
+      );
     }
     return linksArr;
   };
