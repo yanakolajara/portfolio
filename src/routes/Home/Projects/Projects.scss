@@ -1,0 +1,32 @@
+.projects {
+  display: grid;
+  grid-template-columns: 15% 15% 70%;
+  grid-template-rows: 60px 40px auto;
+  grid-template-areas:
+    'title title title'
+    'tag-selector sorting-selector search-bar'
+    'projects-container projects-container projects-container';
+  row-gap: 10px;
+}
+
+.title {
+  grid-area: title;
+  margin: 0px;
+  text-align: center;
+}
+
+.tag-selector {
+  grid-area: tag-selector;
+}
+.sorting-selector {
+  grid-area: sorting-selector;
+}
+.search-bar {
+  grid-area: search-bar;
+}
+.projects-container {
+  grid-area: projects-container;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}

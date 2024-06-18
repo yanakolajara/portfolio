@@ -1,0 +1,30 @@
+@import './_variables.scss';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0px;
+  min-height: 100vh;
+
+  font-family: $primary-font;
+  color: $text-light;
+  background: linear-gradient(
+    76.8deg,
+    $background-first 3.6%,
+    $background-second 90.4%
+  );
+}
+
+p {
+  margin: 4px;
+}

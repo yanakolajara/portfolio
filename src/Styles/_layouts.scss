@@ -1,0 +1,49 @@
+@import './_variables.scss';
+
+@mixin container {
+  border-radius: 1rem;
+  padding: 12px;
+  height: stretch;
+  width: stretch;
+}
+
+.container-glass {
+  @include container;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15.1px);
+  -webkit-backdrop-filter: blur(15.1px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+}
+.container-deep {
+  @include container;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+}
+
+.selector {
+  height: 32px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $secondary;
+
+  button {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    color: $text-light;
+
+    background: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .active {
+    background-color: $accent;
+  }
+}

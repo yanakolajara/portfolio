@@ -1,0 +1,201 @@
+[
+  {
+    "name": "Luxury Guitars",
+    "snapshot": "",
+    "description": "Guitar store managing system made with HTML, CSS, and vanilla JavaScript",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Made for Pursuit Fellowship Bootcamp",
+      "creationDate": "01-01-2001"
+    },
+    "tools": ["HTML5", "CSS", "JavaScript"],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Bird Sanctuary",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Student Dashboard",
+    "snapshot": "snapshot-student-dashboard.jpg",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Studio Ghibli",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Youtube Clone",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Budgrt App",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Recipe App",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "",
+      "back-end-repo": "",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Tuner App",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": ""
+    },
+    "tools": [""],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "https://github.com/yanakolajara/tuner-app",
+      "back-end-repo": "https://github.com/yanakolajara/tuner-app",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  },
+  {
+    "name": "Habit Flow",
+    "snapshot": "snapshot-habit-flow.png",
+    "description": "Habit Flow is a web application designed to help users build and maintain healthy habits effortlessly. Upon creating an account, users are presented with a selection of pre-created healthy habits, such as drinking enough water or sleeping more than 8 hours. Users can choose any number of these habits to focus on. The application allows users to track their progress over time by logging whether they completed the task each day. A unique feature of Habit Flow is the option to log attempts, allowing users to mark tasks as 'tried', acknowledging their effort even if they didn't fully complete the task.",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Made for Pursuit Fellowship Bootcamp",
+      "creationDate": "08-15-2023"
+    },
+    "tools": [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "PostgreSQL",
+      "Bootstrap",
+      "Charts.css",
+      "Bcryptjs",
+      "Jsonwebtoken"
+    ],
+    "links": {
+      "live-project": "https://harmonious-basbousa-610b33.netlify.app/",
+      "front-end-repo": "https://github.com/yanakolajara/HabitFlow",
+      "back-end-repo": "https://github.com/yanakolajara/HabitFlow-backend",
+      "wireframes": "",
+      "managing-tool": "https://trello.com/invite/b/BkfRKqFG/ATTI847150401955e98740b3845450f3faebA21EFEC2/habit-flow-app",
+      "other": []
+    }
+  },
+  {
+    "name": "Get it done",
+    "snapshot": "",
+    "description": "",
+    "variables": {
+      "collaborative": false,
+      "purpose": "Pursuit",
+      "creationDate": "03-12-2024"
+    },
+    "tools": ["React.js", "Express.js", "Node.js", "PostgreSQL", "Sass"],
+    "links": {
+      "live-project": "",
+      "front-end-repo": "https://github.com/yanakolajara/get-it-done-app-frontend",
+      "back-end-repo": "https://github.com/yanakolajara/get-it-done-app-backend",
+      "wireframes": "",
+      "managing-tool": "",
+      "other": []
+    }
+  }
+]
