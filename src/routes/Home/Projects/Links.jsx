@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Links({ links }) {
+export default function Links({ data }) {
   const displayLinks = () => {
     const linksArr = [];
-    for (const [key, value] of Object.entries(links)) {
+    for (const [key, value] of Object.entries(data)) {
       linksArr.push(
         <a className={key} href={value}>
           {value}
@@ -12,5 +12,20 @@ export default function Links({ links }) {
     }
     return linksArr;
   };
-  return <div>{displayLinks()}</div>;
+  return (
+    <div>
+      <p>
+        live:
+        <a href={data.live}>{data.live}</a>
+      </p>
+      <p>
+        Front-End Repository:
+        <a href={data.frontEndRepo}>{data.frontEndRepo}</a>
+      </p>
+      <p>
+        Back-End Repository:
+        <a href={data.backEndRepo}>{data.backEndRepo}</a>
+      </p>
+    </div>
+  );
 }
