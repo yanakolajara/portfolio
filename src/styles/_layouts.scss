@@ -3,8 +3,6 @@
 @mixin container {
   border-radius: 1rem;
   padding: 12px;
-  height: stretch;
-  width: stretch;
 }
 
 .container-glass {
@@ -16,6 +14,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
 }
+
 .container-deep {
   @include container;
   background: rgba(0, 0, 0, 0.2);

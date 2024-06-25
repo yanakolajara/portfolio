@@ -1,2 +1,11 @@
+.navbar-container {
+  display: flex;
+  height: 80px;
+
+  padding: 10px 10px 0px 10px;
+}
+
 .navbar {
+  display: flex;
+  align-items: center;
 }

@@ -10,6 +10,8 @@
   justify-content: center;
   align-items: center;
   &__img {
+    width: stretch;
+    height: stretch;
     height: 100%;
     border-radius: 50%;
   }
