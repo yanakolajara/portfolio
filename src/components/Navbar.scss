@@ -9,4 +9,9 @@
 .navbar {
   display: flex;
   align-items: center;
+  a {
+    color: white;
+    margin: 0px 10px;
+    text-decoration: none;
+  }
 }
