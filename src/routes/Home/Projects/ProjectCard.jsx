@@ -1,9 +1,9 @@
 import React from 'react';
 import './ProjectCard.scss';
-import Description from './Description';
-import Info from './Info';
-import Links from './Links';
-import Tools from './Tools';
+// import Description from './Description';
+// import Info from './Info';
+// import Links from './Links';
+// import Tools from './Tools';
 import { useNavigate } from 'react-router-dom';
 
 export default function ProjectCard({ data }) {
@@ -11,10 +11,10 @@ export default function ProjectCard({ data }) {
     name,
     route,
     snapshot,
-    description,
+    // description,
     // variables,
-    tools,
-    links,
+    // tools,
+    // links,
   } = data;
   const navigate = useNavigate();
 

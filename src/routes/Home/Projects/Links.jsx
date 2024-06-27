@@ -1,17 +1,17 @@
 import React from 'react';
 
 export default function Links({ data }) {
-  const displayLinks = () => {
-    const linksArr = [];
-    for (const [key, value] of Object.entries(data)) {
-      linksArr.push(
-        <a className={key} href={value}>
-          {value}
-        </a>
-      );
-    }
-    return linksArr;
-  };
+  // const displayLinks = () => {
+  //   const linksArr = [];
+  //   for (const [key, value] of Object.entries(data)) {
+  //     linksArr.push(
+  //       <a className={key} href={value}>
+  //         {value}
+  //       </a>
+  //     );
+  //   }
+  //   return linksArr;
+  // };
   return (
     <div>
       <p>
