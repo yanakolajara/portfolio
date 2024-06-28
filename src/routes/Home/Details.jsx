@@ -1,6 +1,4 @@
 import React from 'react';
-import Education from './Details/Education';
-import JobCard from './Details/JobCard';
 import Selector from '../../components/Selector';
 
 export default function Details() {
@@ -32,13 +30,18 @@ export default function Details() {
           </p>
         </div>
       )}
-      {selected === 'education' && <Education />}
+      {selected === 'education' && <div>education</div>}
 
       {selected === 'job experience' && (
         <div className='job-experience'>
           {jobExperienceData.map((job) => (
             <div>
-              <JobCard data={job} />
+              <p>{job.company}</p>
+              <p>{job.title}</p>
+              <p>
+                {job.startDate} - {job.endDate}
+              </p>
+              <p>{job.description}</p>
               <hr />
             </div>
           ))}
