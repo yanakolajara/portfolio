@@ -1,8 +1,8 @@
 import React from 'react';
-import Summary from './Summary';
-import Education from './Education';
+import Summary from '../Details/Summary';
+import Education from '../Details/Education';
 import './Details.scss';
-import JobCard from './JobCard';
+import JobCard from '../Details/JobCard';
 
 export default function Details() {
   const [selected, setSelected] = React.useState('summary');
