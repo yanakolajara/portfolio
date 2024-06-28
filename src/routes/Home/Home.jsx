@@ -1,6 +1,6 @@
 import React from 'react';
 import Introduction from './Introduction';
-import Details from './Details/Details';
+import Details from './Details';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
 import './Home.scss';
@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <main className='home'>
       <Introduction profilePicture={profilePicture} />
-      <div className='details__container'>
-        <Details />
-      </div>
+      <Details />
       <div className='skills__container'>
         <Skills />
       </div>
