@@ -18,7 +18,7 @@ export default function ProjectCard({ data }) {
   } = data;
   const navigate = useNavigate();
 
-  const projectSnapshot = require(`../../../assets/${
+  const projectSnapshot = require(`../../../assets/images/${
     snapshot || 'image-placeholder.jpg'
   }`);
   return (

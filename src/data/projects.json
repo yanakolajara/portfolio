@@ -42,7 +42,7 @@
   {
     "name": "Student Dashboard",
     "route": "student-dashboard",
-    "snapshot": "snapshot-student-dashboard.jpg",
+    "snapshot": "project_student-dashboard.jpg",
     "description": "",
     "variables": {
       "collaborative": false,
@@ -162,7 +162,7 @@
   {
     "name": "Habit Flow",
     "route": "habit-flow",
-    "snapshot": "snapshot-habit-flow.png",
+    "snapshot": "project_habit-flow.png",
     "description": "Habit Flow is a web application designed to help users build and maintain healthy habits effortlessly. Upon creating an account, users are presented with a selection of pre-created healthy habits, such as drinking enough water or sleeping more than 8 hours. Users can choose any number of these habits to focus on. The application allows users to track their progress over time by logging whether they completed the task each day. A unique feature of Habit Flow is the option to log attempts, allowing users to mark tasks as 'tried', acknowledging their effort even if they didn't fully complete the task.",
     "variables": {
       "collaborative": false,

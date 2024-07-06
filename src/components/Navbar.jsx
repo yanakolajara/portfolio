@@ -1,5 +1,5 @@
 import React from 'react';
-import YanakoCV from '../assets/YanakoCV.pdf';
+import YanakoCV from '../assets/other/YanakoCV.pdf';
 import './Navbar.scss';
 
 export default function Navbar() {

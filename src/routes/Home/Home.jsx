@@ -6,7 +6,7 @@ import Projects from './Projects/Projects';
 import './Home.scss';
 
 export default function Home() {
-  const profilePicture = require('../../assets/MyPicture.jpg');
+  const profilePicture = require('../../assets/images/yanako-picture.jpg');
   return (
     <main className='home'>
       <Introduction profilePicture={profilePicture} />
