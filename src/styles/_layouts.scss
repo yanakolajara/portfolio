@@ -46,3 +46,8 @@
     background-color: $accent;
   }
 }
+
+.scroll-container {
+  height: 100%;
+  overflow: auto;
+}

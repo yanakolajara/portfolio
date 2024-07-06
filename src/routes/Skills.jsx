@@ -1,14 +1,9 @@
 import React from 'react';
-import ToolCard from './Home/Skills/ToolCard';
 import Selector from '../components/Selector';
 
 export default function Skills() {
   const [selected, setSelected] = React.useState('All');
-  const handleClick = (e) => {
-    e.preventDefault();
-    setSelected(e.target.value);
-  };
-  console.log(selected);
+  const skillsData = require('../data/skills.json');
 
   return (
     <div className='skills container-glass'>
@@ -19,9 +14,21 @@ export default function Skills() {
       />
 
       <p>Last updated: 01/01/2022</p>
-      <div className='scroll-container container-deep'>
-        <ToolCard />
-      </div>
+      <section className='scroll-container container-deep'>
+        {skillsData.map((skill) => {
+          if (selected === 'All' || selected === skill.type) {
+            return (
+              <article className='skill-card'>
+                <h1 className='skill-name'>{skill.name}</h1>
+                <img
+                  className='skill-icon'
+                  src={require(`../assets/icons/${skill['icon-path']}`)}
+                />
+              </article>
+            );
+          }
+        })}
+      </section>
     </div>
   );
 }

@@ -1,6 +1,117 @@
 [
   {
     "name": "JavaScript",
-    "icon-path": ""
+    "icon-path": "icon-javascript.png",
+    "type": "Languages"
+  },
+  {
+    "name": "HTML",
+    "icon-path": "icon-html.png",
+    "type": "Languages"
+  },
+  {
+    "name": "CSS",
+    "icon-path": "icon-css.png",
+    "type": "Languages"
+  },
+  {
+    "name": "React",
+    "icon-path": "icon-react.png",
+    "type": "Frameworks"
+  },
+  {
+    "name": "Node.js",
+    "icon-path": "icon-nodejs.png",
+    "type": "Frameworks"
+  },
+  {
+    "name": "Express.js",
+    "icon-path": "icon-express-js.png",
+    "type": "Frameworks"
+  },
+  {
+    "name": "Python",
+    "icon-path": "icon-python.png",
+    "type": "Languages"
+  },
+  {
+    "name": "Java",
+    "icon-path": "icon-java.png",
+    "type": "Languages"
+  },
+  {
+    "name": "SQL",
+    "icon-path": "icon-sql.png",
+    "type": "Languages"
+  },
+  {
+    "name": "TypeScript",
+    "icon-path": "icon-typescript.png",
+    "type": "Languages"
+  },
+  {
+    "name": "Git",
+    "icon-path": "icon-git.png",
+    "type": "Tools"
+  },
+  {
+    "name": "GitHub",
+    "icon-path": "icon-github.png",
+    "type": "Tools"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon-path": "icon-postgres.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Sass",
+    "icon-path": "icon-sass.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Bootstrap",
+    "icon-path": "icon-bootstrap.png",
+    "type": "Frameworks"
+  },
+  {
+    "name": "Postman",
+    "icon-path": "icon-postman.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Figma",
+    "icon-path": "icon-figma.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Chrome DevTools",
+    "icon-path": "icon-chrome-devtools.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Jest",
+    "icon-path": "icon-jest.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Cypress",
+    "icon-path": "icon-cypress.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Docker",
+    "icon-path": "icon-docker.png",
+    "type": "Tools"
+  },
+  {
+    "name": "Notion",
+    "icon-path": "icon-notion.png",
+    "type": "Other"
+  },
+  {
+    "name": "Trello",
+    "icon-path": "icon-trello.png",
+    "type": "Other"
   }
 ]
