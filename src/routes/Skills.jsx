@@ -1,6 +1,5 @@
 import React from 'react';
-import ToolCard from './ToolCard';
-import './Skills.scss';
+import ToolCard from './Home/Skills/ToolCard';
 
 export default function Skills() {
   const [selected, setSelected] = React.useState('All');

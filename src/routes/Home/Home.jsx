@@ -1,7 +1,7 @@
 import React from 'react';
 import Introduction from './Introduction';
 import Details from './Details';
-import Skills from './Skills/Skills';
+import Skills from '../Skills';
 import Projects from './Projects/Projects';
 import './Home.scss';
 
