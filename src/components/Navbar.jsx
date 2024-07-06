@@ -1,4 +1,5 @@
 import React from 'react';
+import YanakoCV from '../assets/YanakoCV.pdf';
 import './Navbar.scss';
 
 export default function Navbar() {
@@ -20,7 +21,9 @@ export default function Navbar() {
           {/* <a target='_blank' href='/'>
             Blog
           </a> */}
-          <a href='/'>Download CV</a>
+          <a href={YanakoCV} target='_blank' download>
+            Download CV
+          </a>
         </div>
       </nav>
     </div>
