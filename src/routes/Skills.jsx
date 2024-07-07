@@ -13,17 +13,17 @@ export default function Skills() {
         setSelected={setSelected}
       />
 
-      <p>Last updated: 01/01/2022</p>
-      <section className='scroll-container container-deep'>
+      <p>Last updated: July 6, 2024</p>
+      <section className='scroll-container skills-container container-deep'>
         {skillsData.map((skill) => {
           if (selected === 'All' || selected === skill.type) {
             return (
               <article className='skill-card'>
-                <h1 className='skill-name'>{skill.name}</h1>
                 <img
                   className='skill-icon'
                   src={require(`../assets/icons/${skill['icon-path']}`)}
                 />
+                <h1 className='skill-name'>{skill.name}</h1>
               </article>
             );
           }
