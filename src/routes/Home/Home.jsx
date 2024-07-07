@@ -1,8 +1,8 @@
 import React from 'react';
 import Introduction from './Introduction';
 import Details from './Details';
-import Skills from '../Skills';
-import Projects from './Projects/Projects';
+import Skills from './Skills';
+import Projects from './Projects';
 import './Home.scss';
 
 export default function Home() {
@@ -11,12 +11,8 @@ export default function Home() {
     <main className='home'>
       <Introduction profilePicture={profilePicture} />
       <Details />
-      <div className='skills__container'>
-        <Skills />
-      </div>
-      <div className='projects__container'>
-        <Projects />
-      </div>
+      <Skills />
+      <Projects />
     </main>
   );
 }

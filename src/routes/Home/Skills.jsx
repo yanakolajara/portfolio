@@ -1,9 +1,9 @@
 import React from 'react';
-import Selector from '../components/Selector';
+import Selector from '../../components/Selector';
 
 export default function Skills() {
   const [selected, setSelected] = React.useState('All');
-  const skillsData = require('../data/skills.json');
+  const skillsData = require('../../data/skills.json');
 
   return (
     <div className='skills container-glass'>
@@ -20,7 +20,7 @@ export default function Skills() {
             <article className='skill-card'>
               <img
                 className='skill-icon'
-                src={require(`../assets/icons/${skill['icon-path']}`)}
+                src={require(`../../assets/icons/${skill['icon-path']}`)}
                 alt={skill.name}
               />
               <h1 className='skill-name'>{skill.name}</h1>
