@@ -91,7 +91,7 @@
   {
     "name": "Budgrt App",
     "route": "budgrt-app",
-    "snapshot": "",
+    "snapshot": "project_budgrt-app.png",
     "description": "",
     "variables": {
       "collaborative": false,
@@ -100,7 +100,7 @@
     },
     "tools": [""],
     "links": {
-      "live": "",
+      "live": "https://budgrt-ynk.netlify.app/",
       "frontEndRepo": "",
       "backEndRepo": "",
       "wireframes": "",
@@ -111,7 +111,7 @@
   {
     "name": "Youtube Clone",
     "route": "youtube-clone",
-    "snapshot": "",
+    "snapshot": "project_youtube-clone.png",
     "description": "",
     "variables": {
       "collaborative": false,
@@ -131,7 +131,7 @@
   {
     "name": "Studio Ghibli",
     "route": "studio-ghibli",
-    "snapshot": "",
+    "snapshot": "project_studio_ghibli.png",
     "description": "",
     "variables": {
       "collaborative": false,
@@ -171,7 +171,7 @@
   {
     "name": "Bird Sanctuary",
     "route": "bird-sanctuary",
-    "snapshot": "",
+    "snapshot": "project_bird-sanctuary.png",
     "description": "",
     "variables": {
       "collaborative": false,
@@ -191,7 +191,7 @@
   {
     "name": "Luxury Guitars",
     "route": "luxury-guitars",
-    "snapshot": "",
+    "snapshot": "project_luxury-guitars.JPG",
     "description": "Luxury Guitars is a guitar store management system build with pure HTML, CSS, and JavaScript.",
     "variables": {
       "collaborative": false,
