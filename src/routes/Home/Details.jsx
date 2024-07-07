@@ -30,7 +30,11 @@ export default function Details() {
           </p>
         </div>
       )}
-      {selected === 'education' && <div>education</div>}
+      {selected === 'education' && (
+        <div>
+          <p>Feature in progress</p>
+        </div>
+      )}
 
       {selected === 'job experience' && (
         <div className='job-experience'>
