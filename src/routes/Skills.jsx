@@ -16,17 +16,18 @@ export default function Skills() {
       <p>Last updated: July 6, 2024</p>
       <section className='scroll-container skills-container container-deep'>
         {skillsData.map((skill) => {
-          if (selected === 'All' || selected === skill.type) {
-            return (
-              <article className='skill-card'>
-                <img
-                  className='skill-icon'
-                  src={require(`../assets/icons/${skill['icon-path']}`)}
-                />
-                <h1 className='skill-name'>{skill.name}</h1>
-              </article>
-            );
-          }
+          return selected === 'All' || selected === skill.type ? (
+            <article className='skill-card'>
+              <img
+                className='skill-icon'
+                src={require(`../assets/icons/${skill['icon-path']}`)}
+                alt={skill.name}
+              />
+              <h1 className='skill-name'>{skill.name}</h1>
+            </article>
+          ) : (
+            ''
+          );
         })}
       </section>
     </div>

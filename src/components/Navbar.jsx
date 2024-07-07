@@ -12,16 +12,24 @@ export default function Navbar() {
           {/* <a href='/favorite-resources'>Favorite resources</a> */}
         </div>
         <div className='contact-links'>
-          <a target='_blank' href='https://github.com/yanakolajara'>
+          <a
+            target='_blank'
+            href='https://github.com/yanakolajara'
+            rel='noopener noreferrer'
+          >
             GitHub
           </a>
-          <a target='_blank' href='https://www.linkedin.com/in/yanakolajara/'>
+          <a
+            target='_blank'
+            href='https://www.linkedin.com/in/yanakolajara/'
+            rel='noopener noreferrer'
+          >
             LinkedIn
           </a>
           {/* <a target='_blank' href='/'>
             Blog
           </a> */}
-          <a href={YanakoCV} target='_blank' download>
+          <a href={YanakoCV} target='_blank' rel='noopener noreferrer' download>
             Download CV
           </a>
         </div>
