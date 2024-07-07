@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
+// import ProjectCard from './ProjectCard';
 import './Projects.scss';
 
 export default function Projects() {
@@ -12,9 +12,10 @@ export default function Projects() {
       <button className='sorting-selector'>Sort By</button>
       <input type='text' className='search-bar' id='' />
       <div className='projects-container container-deep'>
-        {data.map((project) => (
+        <p>Feature in progress...</p>
+        {/* {data.map((project) => (
           <ProjectCard data={project} />
-        ))}
+        ))} */}
       </div>
     </div>
   );
