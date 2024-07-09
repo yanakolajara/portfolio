@@ -14,7 +14,7 @@
       "live": "",
       "frontEndRepo": "https://github.com/yanakolajara/get-it-done-app-frontend",
       "backEndRepo": "https://github.com/yanakolajara/get-it-done-app-backend",
-      "wireframes": "",
+      "wireframes": "https://www.figma.com/design/ITvAgUjjnxyIyTQ4iqq8Qm/Untitled?node-id=0-1&t=bl5K0l3agfdE6jLN-0",
       "managingTool": "",
       "other": []
     }
@@ -58,7 +58,7 @@
       "purpose": "Made for Pursuit Fellowship Bootcamp",
       "creationDate": ""
     },
-    "tools": [""],
+    "tools": ["React.js", "Express.js", "Node.js", "PostgreSQL", "Sass"],
     "links": {
       "live": "",
       "frontEndRepo": "https://github.com/yanakolajara/tuner-app",
@@ -71,20 +71,28 @@
   {
     "name": "Recipe App",
     "route": "recipe-app",
-    "snapshot": "",
+    "snapshot": "project_recipe-app.avif",
     "description": "",
     "variables": {
       "collaborative": true,
       "purpose": "Made for Pursuit Fellowship Bootcamp",
       "creationDate": ""
     },
-    "tools": [""],
+    "tools": [
+      "React.js",
+      "Express.js",
+      "PostgreSQL",
+      "SQL",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
     "links": {
-      "live": "",
-      "frontEndRepo": "",
-      "backEndRepo": "",
-      "wireframes": "",
-      "managingTool": "",
+      "live": "https://dreamy-biscochitos-50f554.netlify.app/",
+      "frontEndRepo": "https://github.com/yanakolajara/single-resource-project-front-end",
+      "backEndRepo": "https://github.com/yanakolajara/single-resource-project-back-end",
+      "wireframes": "https://github.com/yanakolajara/single-resource-project-front-end/tree/main/src/erd-wireframes",
+      "managingTool": "https://trello.com/b/JNnC505L/single-resource-project",
       "other": []
     }
   },
@@ -98,13 +106,13 @@
       "purpose": "Made for Pursuit Fellowship Bootcamp",
       "creationDate": ""
     },
-    "tools": [""],
+    "tools": ["React.js", "Express.js", "HTML", "JavaScript", "CSS"],
     "links": {
       "live": "https://budgrt-ynk.netlify.app/",
-      "frontEndRepo": "",
-      "backEndRepo": "",
+      "frontEndRepo": "https://github.com/yanakolajara/budgrt-app-front-end",
+      "backEndRepo": "https://github.com/yanakolajara/Budgrt-app",
       "wireframes": "",
-      "managingTool": "",
+      "managingTool": "https://trello.com/b/1G7SjTeH/budgtr-app",
       "other": []
     }
   },
@@ -118,13 +126,13 @@
       "purpose": "Made for Pursuit Fellowship Bootcamp",
       "creationDate": ""
     },
-    "tools": [""],
+    "tools": ["React.js", "HTML", "JavaScript", "CSS"],
     "links": {
       "live": "",
-      "frontEndRepo": "",
-      "backEndRepo": "",
-      "wireframes": "",
-      "managingTool": "",
+      "frontEndRepo": "https://github.com/yanakolajara/youtube-clone",
+      "backEndRepo": null,
+      "wireframes": null,
+      "managingTool": null,
       "other": []
     }
   },
@@ -138,13 +146,13 @@
       "purpose": "Made for Pursuit Fellowship Bootcamp",
       "creationDate": ""
     },
-    "tools": [""],
+    "tools": ["React.js", "HTML", "JavaScript", "CSS", "Cypress"],
     "links": {
       "live": "",
-      "frontEndRepo": "",
-      "backEndRepo": "",
-      "wireframes": "",
-      "managingTool": "",
+      "frontEndRepo": "https://github.com/yanakolajara/assessment-final-react",
+      "backEndRepo": null,
+      "wireframes": null,
+      "managingTool": null,
       "other": []
     }
   },
@@ -158,13 +166,13 @@
       "purpose": "Made for Pursuit Fellowship Bootcamp",
       "creationDate": ""
     },
-    "tools": [""],
+    "tools": ["React.js", "HTML", "JavaScript", "CSS"],
     "links": {
       "live": "",
-      "frontEndRepo": "",
-      "backEndRepo": "",
-      "wireframes": "",
-      "managingTool": "",
+      "frontEndRepo": "https://github.com/yanakolajara/project-student-dashboard",
+      "backEndRepo": null,
+      "wireframes": null,
+      "managingTool": null,
       "other": []
     }
   },
@@ -175,16 +183,16 @@
     "description": "",
     "variables": {
       "collaborative": false,
-      "purpose": "Pursuit",
-      "creationDate": ""
+      "purpose": "Made for Pursuit Fellowship Bootcamp",
+      "creationDate": "06-03-2023"
     },
-    "tools": [""],
+    "tools": ["React.js", "HTML", "JavaScript", "CSS"],
     "links": {
       "live": "",
       "frontEndRepo": "https://github.com/yanakolajara/project-bird-sanctuary.git",
-      "backEndRepo": "",
-      "wireframes": "",
-      "managingTool": "",
+      "backEndRepo": null,
+      "wireframes": null,
+      "managingTool": null,
       "other": []
     }
   },
@@ -196,15 +204,15 @@
     "variables": {
       "collaborative": false,
       "purpose": "Made for Pursuit Fellowship Bootcamp",
-      "creationDate": "01-01-2001"
+      "creationDate": "05-22-2023"
     },
-    "tools": ["HTML5", "CSS", "JavaScript"],
+    "tools": ["HTML", "CSS", "JavaScript"],
     "links": {
-      "live": "",
-      "frontEndRepo": "",
-      "backEndRepo": "",
-      "wireframes": "",
-      "managingTool": "",
+      "live": "https://luxuryguitars.netlify.app/",
+      "frontEndRepo": "https://github.com/yanakolajara/Luxury-guitars-inventory-app",
+      "backEndRepo": null,
+      "wireframes": null,
+      "managingTool": null,
       "other": []
     }
   }
