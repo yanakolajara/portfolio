@@ -32,16 +32,16 @@ export default function Details() {
         </div>
       )}
       {selected === 'education' && (
-        <div>
+        <div className='education'>
           {educationData.map((education) => (
             <React.Fragment>
-              <div className='education_image'>
+              <div className='education__image'>
                 <img
                   src={require(`../../assets/images/${education['image']}`)}
                   alt={education.name}
                 />
               </div>
-              <div className='education_details'>
+              <div className='education__details'>
                 <h1>{education.name}</h1>
                 <p>Degree type: {education.degree}</p>
                 <p>
