@@ -32,7 +32,7 @@ export default function Details() {
         </div>
       )}
       {selected === 'education' && (
-        <div className='education'>
+        <div className='education scroll-container'>
           {educationData.map((education) => (
             <React.Fragment>
               <div className='education__card'>
