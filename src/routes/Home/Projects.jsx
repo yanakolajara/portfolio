@@ -49,7 +49,7 @@ export default function Projects() {
                         value && (
                           <li>
                             <p>
-                              {key}:
+                              {key}:{' '}
                               <a
                                 href={value}
                                 target='_blank'
