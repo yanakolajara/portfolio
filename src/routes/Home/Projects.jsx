@@ -5,9 +5,9 @@ export default function Projects() {
   return (
     <div className='projects container-glass'>
       <h1 className='title'>Projects</h1>
-      <button className='tag-selector'>Look for</button>
+      {/* <button className='tag-selector'>Look for</button>
       <button className='sorting-selector'>Sort By</button>
-      <input type='text' className='search-bar' id='' />
+      <input type='text' className='search-bar' id='' /> */}
       <section className='projects-container container-deep'>
         {data.map((project) => {
           const projectSnapshot = require(`../../assets/images/${
