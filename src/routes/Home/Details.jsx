@@ -4,6 +4,7 @@ import Selector from '../../components/Selector';
 export default function Details() {
   const [selected, setSelected] = React.useState('summary');
   const jobExperienceData = require('../../data/job-experience.json');
+  const educationData = require('../../data/education.json');
   return (
     <div className='details container-glass'>
       <Selector
@@ -32,7 +33,23 @@ export default function Details() {
       )}
       {selected === 'education' && (
         <div>
-          <p>Feature in progress</p>
+          {educationData.map((education) => (
+            <React.Fragment>
+              <div className='education_image'>
+                <img
+                  src={require(`../../assets/images/${education['image']}`)}
+                  alt={education.name}
+                />
+              </div>
+              <div className='education_details'>
+                <h1>{education.name}</h1>
+                <p>Degree type: {education.degree}</p>
+                <p>
+                  {education['start-date']} - {education['end-date']}
+                </p>
+              </div>
+            </React.Fragment>
+          ))}
         </div>
       )}
 

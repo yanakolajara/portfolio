@@ -4,6 +4,7 @@
     "image": "logo_pursuit.png",
     "start-date": "03-2023",
     "end-date": "01-2024",
+    "degree": "Training Program",
     "courses": [],
     "skills": []
   },
@@ -12,6 +13,7 @@
     "image": "logo_platzi.png",
     "start-date": null,
     "end-date": null,
+    "degree": "Online Learning",
     "courses": [],
     "skills": []
   },
@@ -20,14 +22,16 @@
     "image": "logo_southern-new-hampshire-university.webp",
     "start-date": "02-2022",
     "end-date": "09-2022",
+    "degree": "Bachelor's Degree",
     "courses": [],
     "skills": []
   },
   {
     "name": "Tecnologico De Monterrey",
-    "image": "logo_tecnologico-de-monterrey.png",
+    "image": "logo_tecnologico-de-monterrey.svg",
     "start-date": "06-2016",
     "end-date": "09-2016",
+    "degree": "Bootcamp",
     "courses": [],
     "skills": []
   }
