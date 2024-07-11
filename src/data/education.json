@@ -1,23 +1,34 @@
 [
   {
     "name": "Pursuit",
-    "image": "",
+    "image": "logo_pursuit.png",
     "start-date": "03-2023",
     "end-date": "01-2024",
+    "courses": [],
+    "skills": []
+  },
+  {
+    "name": "Platzi",
+    "image": "logo_platzi.png",
+    "start-date": null,
+    "end-date": null,
+    "courses": [],
     "skills": []
   },
   {
     "name": "Southern New Hampshire University",
-    "image": "",
+    "image": "logo_southern-new-hampshire-university.webp",
     "start-date": "02-2022",
     "end-date": "09-2022",
+    "courses": [],
     "skills": []
   },
   {
     "name": "Tecnologico De Monterrey",
-    "image": "",
+    "image": "logo_tecnologico-de-monterrey.png",
     "start-date": "06-2016",
     "end-date": "09-2016",
+    "courses": [],
     "skills": []
   }
 ]
