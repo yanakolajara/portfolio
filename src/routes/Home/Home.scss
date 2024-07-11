@@ -109,12 +109,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
+
+    hr {
+      width: 90%;
+      margin-top: 20px;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
   }
 
   .project-card {
     display: grid;
     width: 100%;
-
+    height: 530px;
     grid-template-rows: auto 40px 140px auto;
     grid-template-areas:
       'snapshot'
@@ -140,7 +147,7 @@
 
     .project-details {
       grid-area: details;
-      width: stretch;
+      margin: 0px 10px;
     }
 
     .project-selector {

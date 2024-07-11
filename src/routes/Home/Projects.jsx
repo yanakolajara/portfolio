@@ -23,12 +23,48 @@ export default function Projects() {
               />
 
               <p className='project-title'>{project.name}</p>
-              <div className='project-details scroll-container'></div>
-              {/* <button
-              onClick={() => navigate('/projects/' + route, { test: true })}
-            >
-              Learn more
-            </button> */}
+              <div className='project-details scroll-container container-deep'>
+                {project.description && (
+                  <React.Fragment>
+                    <h2>Description</h2>
+                    <p className='project-description'>{project.description}</p>
+                    <hr />
+                  </React.Fragment>
+                )}
+                {project.tools && (
+                  <div className='project-tools'>
+                    <h2>Tools Used</h2>
+                    <ul>
+                      {project.tools.map((tool) => (
+                        <li className='project-tool'>{tool}</li>
+                      ))}
+                    </ul>
+                    <hr />
+                  </div>
+                )}
+                {Object.keys(project.links).length && (
+                  <ul className='project-links'>
+                    {Object.entries(project.links).map(
+                      ([key, value]) =>
+                        value && (
+                          <li>
+                            <p>
+                              {key}:
+                              <a
+                                href={value}
+                                target='_blank'
+                                rel='noreferrer'
+                                className='project-link'
+                              >
+                                {value}
+                              </a>
+                            </p>
+                          </li>
+                        )
+                    )}
+                  </ul>
+                )}
+              </div>
             </article>
           );
         })}
