@@ -12,31 +12,26 @@ export default function Details({ children, renderSelector }) {
         selected,
         setSelected,
       })}
-      {/* <Selector
-        options={['summary', 'education', 'job experience']}
-        selected={selected}
-        setSelected={setSelected}
-      />
-
-      {selected === 'summary' && (
-        <div>
-          <p>
-            I am a full-stack developer at Pursuit, interested in creating new
-            technologies to make everyone's life more comfortable. Pursuit is an
-            intensive 12-month software engineering fellowship with a 9%
-            acceptance rate. I am skilled in Postgres, Express.js, React.js,
-            JavaScript, Java, Python, HTML, CSS, Node, Git, Algorithms, code
-            reviews, and pair programming. I started my developer journey in
-            2016 by learning basic HTML, CSS, JavaScript, and Arduino at a
-            summer club. Since that, my passion for technology and programming
-            has been growing exponentially. A fun fact about me that makes me an
-            enthusiastic developer is that even if coding is part of my
-            professional career, whenever I have free time, I still use it to
-            code for fun instead of taking a break.
-          </p>
-        </div>
-      )}
-      {selected === 'education' && (
+      {selected === 'Skill Set' && children[0]}
+      {selected === 'Education' && children[1]}
+      {selected === 'Job Experience' && children[2]}
+      {/* <div>
+        <p>
+          I am a full-stack developer at Pursuit, interested in creating new
+          technologies to make everyone's life more comfortable. Pursuit is an
+          intensive 12-month software engineering fellowship with a 9%
+          acceptance rate. I am skilled in Postgres, Express.js, React.js,
+          JavaScript, Java, Python, HTML, CSS, Node, Git, Algorithms, code
+          reviews, and pair programming. I started my developer journey in 2016
+          by learning basic HTML, CSS, JavaScript, and Arduino at a summer club.
+          Since that, my passion for technology and programming has been growing
+          exponentially. A fun fact about me that makes me an enthusiastic
+          developer is that even if coding is part of my professional career,
+          whenever I have free time, I still use it to code for fun instead of
+          taking a break.
+        </p>
+      </div> */}
+      {/* {selected === 'education' && (
         <div className='education scroll-container'>
           {educationData.map((education) => (
             <React.Fragment>
@@ -60,7 +55,6 @@ export default function Details({ children, renderSelector }) {
           ))}
         </div>
       )}
-
       {selected === 'job experience' && (
         <div className='job-experience'>
           {jobExperienceData.map((job) => (
@@ -75,7 +69,7 @@ export default function Details({ children, renderSelector }) {
             </div>
           ))}
         </div>
-      )} */}
+      )}{' '} */}
     </div>
   );
 }

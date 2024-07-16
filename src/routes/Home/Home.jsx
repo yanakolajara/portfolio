@@ -20,8 +20,8 @@ export default function Home() {
       <Introduction profilePicture={profilePicture} />
       <Details renderSelector={(props) => <Selector {...props} />}>
         <SkillSet skillSetData={skillSetData} />
-        <JobExperience jobExperienceData={jobExperienceData} />
         <Education educationData={educationData} />
+        <JobExperience jobExperienceData={jobExperienceData} />
       </Details>
       <Projects projectData={projectData}>
         <ProjectCard />
