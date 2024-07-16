@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Projects() {
-  const data = require('../../data/projects.json');
+  // const data = require('../../data/projects.json');
   return (
     <div className='projects container-glass'>
       <h1 className='title'>Projects</h1>
@@ -9,7 +9,7 @@ export default function Projects() {
       <button className='sorting-selector'>Sort By</button>
       <input type='text' className='search-bar' id='' /> */}
       <section className='projects-container container-deep'>
-        {data.map((project) => {
+        {/* {data.map((project) => {
           const projectSnapshot = require(`../../assets/images/${
             project['snapshot'] || 'image-placeholder.jpg'
           }`);
@@ -67,7 +67,7 @@ export default function Projects() {
               </div>
             </article>
           );
-        })}
+        })} */}
       </section>
     </div>
   );

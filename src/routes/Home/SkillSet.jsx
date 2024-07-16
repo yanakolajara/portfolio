@@ -1,13 +1,13 @@
 import React from 'react';
 import Selector from '../../components/Selector';
 
-export default function Skills() {
-  const [selected, setSelected] = React.useState('All');
-  const skillsData = require('../../data/skills.json');
+export default function SkillSet() {
+  // const [selected, setSelected] = React.useState('All');
+  // const skillsData = require('../../data/skills.json');
 
   return (
     <div className='skills container-glass'>
-      <Selector
+      {/* <Selector
         options={['All', 'Languages', 'Frameworks', 'Tools', 'Other']}
         selected={selected}
         setSelected={setSelected}
@@ -29,7 +29,7 @@ export default function Skills() {
             ''
           );
         })}
-      </section>
+      </section> */}
     </div>
   );
 }

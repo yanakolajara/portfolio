@@ -3,11 +3,11 @@ import Selector from '../../components/Selector';
 
 export default function Details() {
   const [selected, setSelected] = React.useState('summary');
-  const jobExperienceData = require('../../data/job-experience.json');
-  const educationData = require('../../data/education.json');
+  // const jobExperienceData = require('../../data/job-experience.json');
+  // const educationData = require('../../data/education.json');
   return (
     <div className='details container-glass'>
-      <Selector
+      {/* <Selector
         options={['summary', 'education', 'job experience']}
         selected={selected}
         setSelected={setSelected}
@@ -70,7 +70,7 @@ export default function Details() {
             </div>
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 }
