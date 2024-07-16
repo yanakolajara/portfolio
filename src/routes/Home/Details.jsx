@@ -1,12 +1,17 @@
 import React from 'react';
 import Selector from '../../components/Selector';
 
-export default function Details() {
+export default function Details({ children, renderSelector }) {
   const [selected, setSelected] = React.useState('summary');
   // const jobExperienceData = require('../../data/job-experience.json');
   // const educationData = require('../../data/education.json');
   return (
     <div className='details container-glass'>
+      {renderSelector({
+        options: ['Skill Set', 'Education', 'Job Experience'],
+        selected,
+        setSelected,
+      })}
       {/* <Selector
         options={['summary', 'education', 'job experience']}
         selected={selected}
