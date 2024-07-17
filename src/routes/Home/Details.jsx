@@ -2,7 +2,7 @@ import React from 'react';
 import Selector from '../../components/Selector';
 
 export default function Details({ children, renderSelector }) {
-  const [selected, setSelected] = React.useState('summary');
+  const [selected, setSelected] = React.useState('Skill Set');
   // const jobExperienceData = require('../../data/job-experience.json');
   // const educationData = require('../../data/education.json');
   return (
@@ -12,9 +12,11 @@ export default function Details({ children, renderSelector }) {
         selected,
         setSelected,
       })}
-      {selected === 'Skill Set' && children[0]}
-      {selected === 'Education' && children[1]}
-      {selected === 'Job Experience' && children[2]}
+      <div className='container-deep scroll-container'>
+        {selected === 'Skill Set' && children[0]}
+        {selected === 'Education' && children[1]}
+        {selected === 'Job Experience' && children[2]}
+      </div>
       {/* <div>
         <p>
           I am a full-stack developer at Pursuit, interested in creating new
