@@ -8,13 +8,13 @@
 }
 
 .introduction {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 3 / 2;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 40% 60%;
 
   .profile-picture {
-    grid-area: 1 / 1 / 3 / 2;
+    grid-area: 1 / 1 / 2 / 2;
     display: flex;
     justify-content: center;
     align-items: center;
