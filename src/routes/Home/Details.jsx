@@ -1,5 +1,4 @@
 import React from 'react';
-import Selector from '../../components/Selector';
 
 export default function Details({ children, renderSelector }) {
   const [selected, setSelected] = React.useState('Skill Set');
