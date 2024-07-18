@@ -1,31 +1,28 @@
 .home {
   display: grid;
-  grid-template-columns: 25vw 35vw;
+  grid-template-columns: 500px minmax(500px, 650px);
   grid-template-rows: 30vh 35vh;
   grid-gap: 40px;
-  justify-content: center;
-  padding: 20px 0px;
+  padding: 20px 50px;
 }
 
 .introduction {
   grid-area: 1 / 1 / 3 / 2;
   display: grid;
-  grid-template-rows: 40% auto auto;
+  grid-template-rows: 35% auto auto;
 
-  .profile-picture {
+  &__profile-picture {
     display: flex;
     justify-self: center;
     align-self: center;
-    width: 70%;
+    width: 200px;
     border-radius: 50%;
   }
-  .introduction-box {
+  &__title {
+    h1,
     p {
       text-align: center;
-    }
-    p[class='name'] {
-      font-size: 2rem;
-      font-weight: 900;
+      margin: 0px;
     }
   }
   .personal-info {

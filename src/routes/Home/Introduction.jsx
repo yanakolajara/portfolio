@@ -3,9 +3,13 @@ import React from 'react';
 export default function Introduction({ profilePicture }) {
   return (
     <div className='introduction container-glass'>
-      <img src={profilePicture} alt='profile-pic' className='profile-picture' />
-      <div className='introduction-box'>
-        <p className='name'>Yanako Lajara</p>
+      <img
+        className='introduction__profile-picture'
+        src={profilePicture}
+        alt='profile-pic'
+      />
+      <div className='introduction__title'>
+        <h1 className='name'>Yanako Lajara</h1>
         <p className='title'>Full-Stack Web Developer</p>
         <hr />
       </div>
