@@ -1,5 +1,4 @@
 import React from 'react';
-import Selector from '../../components/Selector';
 
 export default function SkillSet({ skillSetData }) {
   return (
