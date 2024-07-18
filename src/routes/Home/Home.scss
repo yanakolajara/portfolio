@@ -1,31 +1,25 @@
 .home {
   display: grid;
-  grid-template-columns: 40vw 40vw;
-  grid-template-rows: 30vh 35vh auto;
-  grid-gap: 20px;
+  grid-template-columns: 25vw 35vw;
+  grid-template-rows: 30vh 35vh;
+  grid-gap: 40px;
   justify-content: center;
   padding: 20px 0px;
 }
 
 .introduction {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 3 / 2;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 40% auto auto;
 
   .profile-picture {
-    grid-area: 1 / 1 / 3 / 2;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    &__img {
-      height: 100%;
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-    }
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    border-radius: 50%;
   }
   .introduction-box {
-    grid-area: 1 / 2 / 2 / 3;
     p {
       text-align: center;
     }
@@ -35,7 +29,6 @@
     }
   }
   .personal-info {
-    grid-area: 2 / 2 / 3 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,26 +66,20 @@
   }
 }
 
-.skills {
-  grid-area: 2 / 1 / 3 / 2;
+.SkillSet {
   display: grid;
-  height: stretch;
-  grid-template-rows: 40px 40px 73%;
-  .skills-container {
+  grid-template-columns: 1fr 1fr;
+  &__card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    .skill-card {
-      display: grid;
-      grid-template-columns: 60px auto;
-      align-items: center;
-      .skill-name {
-        font-size: 1.5em;
-        padding-left: 15px;
-      }
-      .skill-icon {
-        width: 50px;
-        height: 50px;
-      }
+    grid-template-columns: 60px auto;
+    align-items: center;
+    .skill-name {
+      font-size: 1.5em;
+      padding-left: 15px;
+    }
+    .skill-icon {
+      width: 50px;
+      height: 50px;
     }
   }
 }
@@ -102,7 +89,7 @@
 
   display: grid;
   grid-template-columns: 15% 15% 70%;
-  grid-template-rows: 60px 40px auto;
+  grid-template-rows: 60px auto;
   grid-template-areas:
     'title title title'
     'tag-selector sorting-selector search-bar'
@@ -127,7 +114,7 @@
   .projects-container {
     grid-area: projects-container;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 
     hr {
@@ -141,7 +128,7 @@
   .project-card {
     display: grid;
     width: 100%;
-    height: 530px;
+    height: 430px;
     grid-template-rows: auto 40px 140px auto;
     grid-template-areas:
       'snapshot'
