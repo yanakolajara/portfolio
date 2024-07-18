@@ -23,9 +23,10 @@ export default function Home() {
         <Education educationData={educationData} />
         <JobExperience jobExperienceData={jobExperienceData} />
       </Details>
-      <Projects projectData={projectData}>
-        <ProjectCard />
-      </Projects>
+      <Projects
+        projectData={projectData}
+        renderCard={(props) => <ProjectCard {...props} />}
+      ></Projects>
     </main>
   );
 }

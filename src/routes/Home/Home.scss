@@ -89,7 +89,7 @@
 
   display: grid;
   grid-template-columns: 15% 15% 70%;
-  grid-template-rows: 60px 40px auto;
+  grid-template-rows: 60px auto;
   grid-template-areas:
     'title title title'
     'tag-selector sorting-selector search-bar'
@@ -114,7 +114,7 @@
   .projects-container {
     grid-area: projects-container;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 
     hr {
