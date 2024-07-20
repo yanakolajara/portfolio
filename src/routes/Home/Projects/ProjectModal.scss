@@ -1,0 +1,17 @@
+.ProjectModal {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: black, $alpha: 0.5);
+  .content {
+    height: 70%;
+    max-width: 900px;
+    width: 70%;
+  }
+}

@@ -8,6 +8,7 @@ import Education from './Education';
 import ProjectCard from './ProjectCard';
 import Selector from '../../components/Selector';
 import './Home.scss';
+import ProjectModal from './Projects/ProjectModal';
 
 export default function Home() {
   const profilePicture = require('../../assets/images/yanako-picture.jpg');
@@ -17,6 +18,7 @@ export default function Home() {
   const projectData = require('../../data/projectsData.json');
   return (
     <main className='home'>
+      <ProjectModal />
       <Introduction profilePicture={profilePicture} />
       <Details renderSelector={(props) => <Selector {...props} />}>
         <SkillSet skillSetData={skillSetData} />

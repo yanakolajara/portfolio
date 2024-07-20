@@ -54,6 +54,7 @@ export default function ProjectCard({
           </ul>
         )}
       </div>
+      <button>Learn more</button>
     </article>
   );
 }
