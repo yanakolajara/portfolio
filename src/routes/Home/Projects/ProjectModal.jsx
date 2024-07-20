@@ -1,7 +1,6 @@
 import React from 'react';
+import { getLinkProperties } from '../../../utils/data.utils.js';
 import './ProjectModal.scss';
-import { getLinkName } from '../../../utils/dataUtils';
-import { HiStatusOnline } from 'react-icons/hi';
 
 export default function ProjectModal({ projectData }) {
   const project = require(`../../../data/projectsData.json`)[1];
@@ -30,16 +29,21 @@ export default function ProjectModal({ projectData }) {
           <div className='links'>
             <h2 className='title'>Links</h2>
             <div className='links__container'>
-              {Object.entries(project.links).map(([key, value]) => (
-                <a
-                  className='link'
-                  href={value}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  {getLinkName(key)}
-                </a>
-              ))}
+              {Object.entries(project.links).map(([key, value]) => {
+                const { name, buttonStyle, icon } = getLinkProperties(key);
+                return (
+                  <a
+                    className='link'
+                    href={value}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    style={buttonStyle}
+                  >
+                    <i className='link__icon'>{icon}</i>
+                    <p className='link__name'>{name}</p>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
