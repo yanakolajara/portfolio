@@ -1,5 +1,8 @@
 import { HiStatusOnline } from 'react-icons/hi';
 import { FaLink } from 'react-icons/fa6';
+import { ImGithub } from 'react-icons/im';
+import { RiLayout5Fill } from 'react-icons/ri';
+import { BsFillKanbanFill } from 'react-icons/bs';
 
 const getLinkIcon = (name) => {
   const iconStyle = { fontSize: '1.5rem', color: 'white' };
@@ -7,13 +10,13 @@ const getLinkIcon = (name) => {
     case 'live':
       return <HiStatusOnline style={iconStyle} />;
     case 'frontEndRepo':
-      return <FaLink style={iconStyle} />;
+      return <ImGithub style={iconStyle} />;
     case 'backEndRepo':
-      return <FaLink style={iconStyle} />;
+      return <ImGithub style={iconStyle} />;
     case 'wireframes':
-      return <FaLink style={iconStyle} />;
+      return <RiLayout5Fill style={iconStyle} />;
     case 'managingTool':
-      return <FaLink style={iconStyle} />;
+      return <BsFillKanbanFill style={iconStyle} />;
     default:
       return <FaLink style={iconStyle} />;
   }
