@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectModal.scss';
+import { getLinkName } from '../../../utils/dataUtils';
 
 export default function ProjectModal({ projectData }) {
   const project = require(`../../../data/projectsData.json`)[1];
@@ -31,7 +32,7 @@ export default function ProjectModal({ projectData }) {
               {Object.entries(project.links).map(([key, value]) => (
                 <li className='link'>
                   <a href={value} target='_blank' rel='noopener noreferrer'>
-                    {key}
+                    {getLinkName(key)}
                   </a>
                 </li>
               ))}
