@@ -8,7 +8,7 @@ export default function ProjectModal({ projectData }) {
   return (
     <div className='ProjectModal'>
       <article className='content container-glass'>
-        <h1>{project.name}</h1>
+        <h1 className='title'>{project.name}</h1>
         <div className='information'>
           <img
             className='snapshot'

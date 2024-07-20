@@ -13,5 +13,23 @@
     height: 70%;
     max-width: 900px;
     width: 70%;
+    .title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 10px 0px;
+    }
+    .information {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      grid-template-areas:
+        'snapshot description'
+        'tools links';
+      .snapshot {
+        grid-area: snapshot;
+        width: 90%;
+        justify-self: center;
+      }
+    }
   }
 }
