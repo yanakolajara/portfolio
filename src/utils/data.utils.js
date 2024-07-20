@@ -36,16 +36,20 @@ const linkProperties = {
     },
     icon: getLinkIcon('managingTool'),
   },
-  other: {
-    name: 'Other Links',
-    buttonStyle: {
-      background: '#455A64',
-    },
-    icon: getLinkIcon('other'),
+  default: (key) => {
+    const name = nameFormat(key);
+    return {
+      name,
+      buttonStyle: {
+        background: '#455A64',
+      },
+      icon: getLinkIcon('other'),
+    };
   },
 };
 
 const getLinkProperties = (key) =>
-  linkProperties[key] || linkProperties['default'];
+  linkProperties[key] || linkProperties.default(key);
 
+const nameFormat = (name) => name.replace(/-/g, ' ');
 export { getLinkProperties };

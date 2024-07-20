@@ -30,6 +30,7 @@ export default function ProjectModal({ projectData }) {
             <h2 className='title'>Links</h2>
             <div className='links__container'>
               {Object.entries(project.links).map(([key, value]) => {
+                if (key === 'other') return null;
                 const { name, buttonStyle, icon } = getLinkProperties(key);
                 return (
                   <a
