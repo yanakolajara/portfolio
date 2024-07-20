@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectModal.scss';
 import { getLinkName } from '../../../utils/dataUtils';
+import { HiStatusOnline } from 'react-icons/hi';
 
 export default function ProjectModal({ projectData }) {
   const project = require(`../../../data/projectsData.json`)[1];
@@ -19,7 +20,7 @@ export default function ProjectModal({ projectData }) {
           />
           <p className='description'>{project['description']}</p>
           <div className='tools'>
-            <h2>Tools Used</h2>
+            <h2 className='title'>Tools Used</h2>
             <ul>
               {project.tools.map((tool) => (
                 <li className='tool'>{tool}</li>
@@ -27,16 +28,19 @@ export default function ProjectModal({ projectData }) {
             </ul>
           </div>
           <div className='links'>
-            <h2>Links</h2>
-            <ul>
+            <h2 className='title'>Links</h2>
+            <div className='links__container'>
               {Object.entries(project.links).map(([key, value]) => (
-                <li className='link'>
-                  <a href={value} target='_blank' rel='noopener noreferrer'>
-                    {getLinkName(key)}
-                  </a>
-                </li>
+                <a
+                  className='link'
+                  href={value}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {getLinkName(key)}
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </article>
