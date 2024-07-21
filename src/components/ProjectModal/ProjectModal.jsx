@@ -32,9 +32,6 @@ export default function ProjectModal({
               {projectData.tools.map((tool) => {
                 const skill =
                   skillSetData.find((s) => s.name === tool) || skillSetData[0];
-                if (!skill.name) {
-                  skill.name = tool;
-                }
                 return (
                   <article className='tool'>
                     <img
