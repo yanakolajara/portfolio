@@ -22,7 +22,7 @@ export default function ProjectModal({
             className='snapshot'
             src={projectData.image}
             alt={projectData.name}
-            height={300}
+            height={250}
           />
           <p className='description'>{projectData['description']}</p>
           <div className='tools'>
