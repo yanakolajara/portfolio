@@ -1,27 +1,26 @@
 import React from 'react';
-import { getLinkProperties } from '../../../utils/data.utils.js';
+import { getLinkProperties } from '../../utils/data.utils.js';
+import { FiMinimize2 } from 'react-icons/fi';
 import './ProjectModal.scss';
 
-export default function ProjectModal({ projectData }) {
-  const project = require(`../../../data/projectsData.json`)[1];
-  const projectImage = require(`../../../assets/images/${project['snapshot']}`);
-  console.log(project);
+export default function ProjectModal(projectData) {
   return (
     <div className='ProjectModal'>
       <article className='content container-glass'>
-        <h1 className='title'>{project.name}</h1>
+        <FiMinimize2 className='close-button' />
+        <h1 className='title'>{projectData.name}</h1>
         <div className='information'>
           <img
             className='snapshot'
-            src={projectImage}
-            alt={project.name}
+            src={projectData.image}
+            alt={projectData.name}
             height={300}
           />
-          <p className='description'>{project['description']}</p>
+          <p className='description'>{projectData['description']}</p>
           <div className='tools'>
             <h2 className='title'>Tools Used</h2>
             <ul>
-              {project.tools.map((tool) => (
+              {projectData.tools.map((tool) => (
                 <li className='tool'>{tool}</li>
               ))}
             </ul>
@@ -29,7 +28,7 @@ export default function ProjectModal({ projectData }) {
           <div className='links'>
             <h2 className='title'>Links</h2>
             <div className='links__container'>
-              {Object.entries(project.links).map(([key, value]) => {
+              {Object.entries(projectData.links).map(([key, value]) => {
                 if (key === 'other') return null;
                 const { name, buttonStyle, icon } = getLinkProperties(key);
                 return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useModal } from '../../hooks/useModal';
 
 export default function ProjectCard({
   image,
@@ -6,7 +7,14 @@ export default function ProjectCard({
   description,
   tools,
   links,
+  setIsModalOpen,
+  setProjectModalData,
 }) {
+  const openModal = (e) => {
+    e.preventDefault();
+    setIsModalOpen(true);
+    setProjectModalData({ image, name, description, tools, links });
+  };
   return (
     <article className='project-card container-glass'>
       <img src={image} alt='project snapshot' className='project-snapshot' />
@@ -54,7 +62,7 @@ export default function ProjectCard({
           </ul>
         )}
       </div>
-      <button>Learn more</button>
+      <button onClick={openModal}>Learn more</button>
     </article>
   );
 }
