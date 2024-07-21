@@ -1,5 +1,10 @@
 [
   {
+    "name": "",
+    "icon-path": "icon-default.png",
+    "type": "Tools"
+  },
+  {
     "name": "JavaScript",
     "icon-path": "icon-javascript.png",
     "type": "Languages"
@@ -15,7 +20,7 @@
     "type": "Languages"
   },
   {
-    "name": "React",
+    "name": "React.js",
     "icon-path": "icon-react.png",
     "type": "Frameworks"
   },
@@ -56,7 +61,7 @@
   },
   {
     "name": "GitHub",
-    "icon-path": "icon-github.png",
+    "icon-path": "icon-github.svg",
     "type": "Tools"
   },
   {

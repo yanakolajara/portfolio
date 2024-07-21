@@ -7,6 +7,7 @@ export default function ProjectModal({
   isModalOpen,
   setIsModalOpen,
   projectData,
+  skillSetData,
 }) {
   if (!isModalOpen) return null;
   return (
@@ -27,11 +28,25 @@ export default function ProjectModal({
           <p className='description'>{projectData['description']}</p>
           <div className='tools'>
             <h2 className='title'>Tools Used</h2>
-            <ul>
-              {projectData.tools.map((tool) => (
-                <li className='tool'>{tool}</li>
-              ))}
-            </ul>
+            <div className='tools__container'>
+              {projectData.tools.map((tool) => {
+                const skill =
+                  skillSetData.find((s) => s.name === tool) || skillSetData[0];
+                if (!skill.name) {
+                  skill.name = tool;
+                }
+                return (
+                  <article className='tool'>
+                    <img
+                      className='tool__icon'
+                      src={require(`../../assets/icons/${skill['icon-path']}`)}
+                      alt={skill.name}
+                    />
+                    <h1 className='tool__name'>{tool}</h1>
+                  </article>
+                );
+              })}
+            </div>
           </div>
           <div className='links'>
             <h2 className='title'>Links</h2>
