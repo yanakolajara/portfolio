@@ -26,6 +26,7 @@ export default function Home() {
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         projectData={projectModalData}
+        skillSetData={skillSetData}
       />
       <Introduction profilePicture={profilePicture} />
       <Details renderSelector={(props) => <Selector {...props} />}>
