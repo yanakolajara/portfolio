@@ -2,7 +2,6 @@ import React from 'react';
 import { getLinkProperties } from '../../utils/data.utils.js';
 import { FiMinimize2 } from 'react-icons/fi';
 import './ProjectModal.scss';
-import { useModal } from '../../hooks/useModal.js';
 
 export default function ProjectModal({
   isModalOpen,
@@ -10,7 +9,6 @@ export default function ProjectModal({
   projectData,
 }) {
   if (!isModalOpen) return null;
-  console.log(projectData);
   return (
     <div className='ProjectModal'>
       <article className='content container-glass'>
@@ -39,7 +37,7 @@ export default function ProjectModal({
             <h2 className='title'>Links</h2>
             <div className='links__container'>
               {Object.entries(projectData.links).map(([key, value]) => {
-                if (key === 'other' || value === '') return null;
+                if (key === 'other' || !value) return null;
                 const { name, buttonStyle, icon } = getLinkProperties(key);
                 return (
                   <a

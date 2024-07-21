@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import ProjectModal from '../components/ProjectModal/ProjectModal';
+import React from 'react';
 
 const useModal = () => {
   const [projectModalData, setProjectModalData] = React.useState({});
