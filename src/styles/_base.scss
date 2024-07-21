@@ -28,3 +28,10 @@ body {
 p {
   margin: 4px;
 }
+
+button {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
