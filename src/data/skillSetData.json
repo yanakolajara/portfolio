@@ -22,17 +22,17 @@
   {
     "name": "React.js",
     "icon-path": "icon-react.png",
-    "type": "Frameworks"
+    "type": "Front-end"
   },
   {
     "name": "Node.js",
     "icon-path": "icon-nodejs.png",
-    "type": "Frameworks"
+    "type": "Back-end"
   },
   {
     "name": "Express.js",
     "icon-path": "icon-express-js.png",
-    "type": "Frameworks"
+    "type": "Back-end"
   },
   {
     "name": "Python",
@@ -59,55 +59,51 @@
     "icon-path": "icon-git.png",
     "type": "Tools"
   },
-  {
-    "name": "GitHub",
-    "icon-path": "icon-github.svg",
-    "type": "Tools"
-  },
+
   {
     "name": "PostgreSQL",
     "icon-path": "icon-postgres.png",
-    "type": "Tools"
+    "type": "Back-end"
   },
   {
     "name": "Sass",
     "icon-path": "icon-sass.png",
-    "type": "Tools"
+    "type": "Front-end"
   },
   {
     "name": "Bootstrap",
     "icon-path": "icon-bootstrap.png",
-    "type": "Frameworks"
+    "type": "Front-end"
   },
   {
     "name": "Postman",
     "icon-path": "icon-postman.png",
-    "type": "Tools"
+    "type": "Back-end"
   },
   {
     "name": "Figma",
     "icon-path": "icon-figma.png",
-    "type": "Tools"
+    "type": "Other"
   },
   {
     "name": "Chrome DevTools",
     "icon-path": "icon-chrome-devtools.png",
-    "type": "Tools"
+    "type": "Other"
   },
   {
     "name": "Jest",
     "icon-path": "icon-jest.png",
-    "type": "Tools"
+    "type": "Other"
   },
   {
     "name": "Cypress",
     "icon-path": "icon-cypress.png",
-    "type": "Tools"
+    "type": "Other"
   },
   {
     "name": "Docker",
     "icon-path": "icon-docker.png",
-    "type": "Tools"
+    "type": "Other"
   },
   {
     "name": "Notion",
@@ -118,5 +114,10 @@
     "name": "Trello",
     "icon-path": "icon-trello.png",
     "type": "Other"
+  },
+  {
+    "name": "Next.js",
+    "icon-path": "icon-default.png",
+    "type": "Front-end"
   }
 ]

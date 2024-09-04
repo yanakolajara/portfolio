@@ -1,0 +1,26 @@
+@import '../../../styles/main.scss';
+
+.introduction {
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .position {
+      color: $primary;
+    }
+  }
+
+  .picture-container {
+    display: flex;
+    padding: 30px;
+
+    .profile-picture {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

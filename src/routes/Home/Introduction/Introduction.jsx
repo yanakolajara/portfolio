@@ -1,21 +1,14 @@
 import React from 'react';
+import './Introduction.scss';
 
 export default function Introduction({ profilePicture }) {
   return (
-    <div className='introduction container-glass'>
-      <img
-        className='introduction__profile-picture'
-        src={profilePicture}
-        alt='profile-pic'
-      />
-      <div className='introduction__title'>
+    <section className='introduction'>
+      <div className='title-container'>
         <h1 className='name'>Yanako Lajara</h1>
-        <p className='title'>Full-Stack Web Developer</p>
-        <hr />
-      </div>
+        <h2 className='position'>Full-Stack Web Developer</h2>
 
-      <div className='summary'>
-        <p>
+        <p className='summary'>
           I am a full-stack developer at Pursuit, interested in creating new
           technologies to make everyone's life more comfortable. Pursuit is an
           intensive 12-month software engineering fellowship with a 9%
@@ -30,6 +23,13 @@ export default function Introduction({ profilePicture }) {
           taking a break.
         </p>
       </div>
-    </div>
+      <div className='picture-container'>
+        <img
+          className='profile-picture'
+          src={profilePicture}
+          alt='profile-pic'
+        />
+      </div>
+    </section>
   );
 }

@@ -5,6 +5,7 @@ const linkProperties = {
     name: 'Live Demo',
     buttonStyle: {
       background: '#388E3C',
+      border: '1px solid #43a148',
     },
     icon: getLinkIcon('live'),
   },
@@ -12,6 +13,7 @@ const linkProperties = {
     name: 'Frontend Repository',
     buttonStyle: {
       background: '#1976D2',
+      border: '1px solid #2988e6',
     },
     icon: getLinkIcon('frontEndRepo'),
   },
@@ -19,6 +21,7 @@ const linkProperties = {
     name: 'Backend Repository',
     buttonStyle: {
       background: '#E64A19',
+      border: '1px solid #ff6c40',
     },
     icon: getLinkIcon('backEndRepo'),
   },
@@ -26,6 +29,7 @@ const linkProperties = {
     name: 'Wireframes',
     buttonStyle: {
       background: '#FFA000',
+      border: '1px solid #ffb73b',
     },
     icon: getLinkIcon('wireframes'),
   },
@@ -33,6 +37,7 @@ const linkProperties = {
     name: 'Managing Tool',
     buttonStyle: {
       background: '#7B1FA2',
+      border: '1px solid #9435bd',
     },
     icon: getLinkIcon('managingTool'),
   },

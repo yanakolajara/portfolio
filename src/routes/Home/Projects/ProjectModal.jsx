@@ -1,35 +1,57 @@
 import React from 'react';
-import { getLinkProperties } from '../../utils/data.utils.js';
+import { getLinkProperties } from '../../../utils/data.utils.js';
 import { FiMinimize2 } from 'react-icons/fi';
 import './ProjectModal.scss';
 
-export default function ProjectModal(projectData) {
+export default function ProjectModal({
+  isModalOpen,
+  setIsModalOpen,
+  projectData,
+  skillSetData,
+}) {
+  if (!isModalOpen) return null;
+  const image = require(`../../../assets/images/${projectData['snapshot']}`);
+
   return (
     <div className='ProjectModal'>
       <article className='content container-glass'>
-        <FiMinimize2 className='close-button' />
+        <FiMinimize2
+          onClick={() => setIsModalOpen(false)}
+          className='close-button'
+        />
         <h1 className='title'>{projectData.name}</h1>
         <div className='information'>
           <img
             className='snapshot'
-            src={projectData.image}
+            src={image}
             alt={projectData.name}
-            height={300}
+            height={250}
           />
           <p className='description'>{projectData['description']}</p>
           <div className='tools'>
             <h2 className='title'>Tools Used</h2>
-            <ul>
-              {projectData.tools.map((tool) => (
-                <li className='tool'>{tool}</li>
-              ))}
-            </ul>
+            <div className='tools__container'>
+              {projectData.tools.map((tool) => {
+                const skill =
+                  skillSetData.find((s) => s.name === tool) || skillSetData[0];
+                return (
+                  <article className='tool'>
+                    <img
+                      className='tool__icon'
+                      src={require(`../../../assets/icons/${skill['icon-path']}`)}
+                      alt={skill.name}
+                    />
+                    <h3 className='tool__name'>{tool}</h3>
+                  </article>
+                );
+              })}
+            </div>
           </div>
           <div className='links'>
             <h2 className='title'>Links</h2>
             <div className='links__container'>
               {Object.entries(projectData.links).map(([key, value]) => {
-                if (key === 'other') return null;
+                if (key === 'other' || !value) return null;
                 const { name, buttonStyle, icon } = getLinkProperties(key);
                 return (
                   <a

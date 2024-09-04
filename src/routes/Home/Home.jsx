@@ -1,25 +1,20 @@
 import React from 'react';
-import Introduction from './Introduction';
-import Details from './Details';
-import Projects from './Projects';
-import SkillSet from './SkillSet';
-import JobExperience from './JobExperience';
-import Education from './Education';
-import ProjectCard from './ProjectCard';
-import Selector from '../../components/Selector';
-import ProjectModal from '../../components/ProjectModal/ProjectModal';
 import { useModal } from '../../hooks/useModal';
+import Introduction from './Introduction/Introduction';
+import Projects from './Projects/Projects';
+import SkillSet from './SkillSet/SkillSet';
+import Experience from './Experience/Experience';
+import ProjectModal from './Projects/ProjectModal';
 import './Home.scss';
 
 export default function Home() {
+  const { isModalOpen, setIsModalOpen, projectModalData, setProjectModalData } =
+    useModal();
   const profilePicture = require('../../assets/images/yanako-picture.jpg');
   const skillSetData = require('../../data/skillSetData.json');
   const jobExperienceData = require('../../data/jobExperienceData.json');
   const educationData = require('../../data/educationData.json');
   const projectData = require('../../data/projectsData.json');
-
-  const { isModalOpen, setIsModalOpen, projectModalData, setProjectModalData } =
-    useModal();
   return (
     <main className='home'>
       <ProjectModal
@@ -29,17 +24,16 @@ export default function Home() {
         skillSetData={skillSetData}
       />
       <Introduction profilePicture={profilePicture} />
-      <Details renderSelector={(props) => <Selector {...props} />}>
-        <SkillSet skillSetData={skillSetData} />
-        <Education educationData={educationData} />
-        <JobExperience jobExperienceData={jobExperienceData} />
-      </Details>
+      <SkillSet skillSetData={skillSetData} />
+      <Experience
+        jobExperienceData={jobExperienceData}
+        educationData={educationData}
+      />
       <Projects
         projectData={projectData}
-        setIsModalOpen={setIsModalOpen}
         setProjectModalData={setProjectModalData}
-        renderCard={(props) => <ProjectCard {...props} />}
-      ></Projects>
+        setIsModalOpen={setIsModalOpen}
+      />
     </main>
   );
 }

@@ -8,8 +8,6 @@ export default function Navbar() {
       <nav className='container-glass navbar'>
         <div className='portfolio-sections'>
           <a href='/'>Home</a>
-          {/* <a href='/about-me'>More about me</a> */}
-          {/* <a href='/favorite-resources'>Favorite resources</a> */}
         </div>
         <div className='contact-links'>
           <a
@@ -26,13 +24,15 @@ export default function Navbar() {
           >
             LinkedIn
           </a>
-          {/* <a target='_blank' href='/'>
-            Blog
-          </a> */}
           <a href={YanakoCV} target='_blank' rel='noopener noreferrer' download>
             Download CV
           </a>
         </div>
+        {/* <a href='/about-me'>More about me</a>
+          <a href='/favorite-resources'>Favorite resources</a>
+          <a target='_blank' href='/'>
+            Blog
+          </a> */}
       </nav>
     </div>
   );

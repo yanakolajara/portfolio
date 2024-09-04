@@ -1,10 +1,10 @@
 [
   {
-    "name": "Pursuit",
+    "name": "Pursuit Fellowship",
     "image": "logo_pursuit.png",
-    "start-date": "03-2023",
-    "end-date": "01-2024",
-    "degree": "Training Program",
+    "start-date": "March 2023",
+    "end-date": "January 2024",
+    "degree": "Bootcamp",
     "courses": [],
     "skills": []
   },
@@ -20,17 +20,17 @@
   {
     "name": "Southern New Hampshire University",
     "image": "logo_southern-new-hampshire-university.webp",
-    "start-date": "02-2022",
-    "end-date": "09-2022",
-    "degree": "Bachelor's Degree",
+    "start-date": "February 2022",
+    "end-date": "September 2022",
+    "degree": "Bachelor's Degree (8 months)",
     "courses": [],
     "skills": []
   },
   {
     "name": "Tecnologico De Monterrey",
     "image": "logo_tecnologico-de-monterrey.jpeg",
-    "start-date": "06-2016",
-    "end-date": "09-2016",
+    "start-date": "June 2016",
+    "end-date": "September 2016",
     "degree": "Bootcamp",
     "courses": [],
     "skills": []
