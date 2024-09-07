@@ -1,21 +1,19 @@
 import React from 'react';
 import './Projects.scss';
 
-export default function Projects({
-  projectData,
-  renderCard,
-  setIsModalOpen,
-  setProjectModalData,
-}) {
+function Projects(props) {
+  const { projectData, renderCard, setIsModalOpen, setProjectModalData } =
+    props;
   const openModal = (e, data) => {
     e.preventDefault();
     setIsModalOpen(true);
     setProjectModalData(data);
   };
-  return (
-    <div className='projects'>
-      <h2 className='title'>Projects</h2>
+  // console.log('REF HERE', ref);
 
+  return (
+    <div id='projects' className='projects'>
+      <h2 className='title'>Projects</h2>
       <section className='projects-container'>
         {projectData.map((project) => {
           const image = require(`../../../assets/images/${
@@ -28,15 +26,12 @@ export default function Projects({
                 alt='project snapshot'
                 className='card__snapshot'
               />
-              <h3 className='card__title'>{project.name}</h3>
-              <p className='card__description'>
-                {project.description ?? 'No description provided'}
-              </p>
+
               <button
                 className='card__learn-more-btn'
                 onClick={(e) => openModal(e, project)}
               >
-                Learn more
+                {project.name}
               </button>
             </article>
           );
@@ -51,3 +46,5 @@ export default function Projects({
     </div>
   );
 }
+
+export default React.forwardRef(Projects);

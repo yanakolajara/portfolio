@@ -3,7 +3,7 @@ import './Introduction.scss';
 
 export default function Introduction({ profilePicture }) {
   return (
-    <section className='introduction'>
+    <section id='intro' className='introduction'>
       <div className='title-container'>
         <h1 className='name'>Yanako Lajara</h1>
         <h2 className='position'>Full-Stack Web Developer</h2>

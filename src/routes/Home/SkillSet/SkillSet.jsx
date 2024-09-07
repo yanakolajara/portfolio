@@ -1,7 +1,7 @@
 import React from 'react';
 import './SkillSet.scss';
 
-export default function SkillSet({ skillSetData }) {
+function SkillSet({ skillSetData }) {
   const showSkills = (type = 'other') => {
     const skills = skillSetData.filter((skill) => skill.type === type);
     const skillCards = skills.map((skill) => {
@@ -19,7 +19,7 @@ export default function SkillSet({ skillSetData }) {
     return skillCards;
   };
   return (
-    <section className='skill-set'>
+    <section id='skill-set' className='skill-set'>
       <h2 className='title'>Skill Set</h2>
       <div className='container'>
         <div className='skill-type'>
@@ -43,3 +43,5 @@ export default function SkillSet({ skillSetData }) {
     </section>
   );
 }
+
+export default SkillSet;
