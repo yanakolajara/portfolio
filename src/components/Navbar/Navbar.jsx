@@ -6,7 +6,7 @@ import NavbarOption from './NavbarOption';
 import './Navbar.scss';
 
 export default function Navbar() {
-  const [selected, setSelected] = React.useState('Intro');
+  // const [selected, setSelected] = React.useState('Intro');
 
   return (
     <nav className='container-glass-dark navbar'>

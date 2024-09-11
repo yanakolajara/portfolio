@@ -2,8 +2,12 @@ import React from 'react';
 import './Projects.scss';
 
 function Projects(props) {
-  const { projectData, renderCard, setIsModalOpen, setProjectModalData } =
-    props;
+  const {
+    projectData,
+    // renderCard,
+    setIsModalOpen,
+    setProjectModalData,
+  } = props;
   const openModal = (e, data) => {
     e.preventDefault();
     setIsModalOpen(true);
