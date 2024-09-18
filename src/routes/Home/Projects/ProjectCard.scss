@@ -45,6 +45,9 @@
         background: $secondary;
         color: $text-light;
         font-weight: bold;
+        &:hover {
+          background: $secondary;
+        }
       }
     }
   }
@@ -56,9 +59,11 @@
   }
 
   &__description {
-    grid-area: details;
-    margin: 0px 10px;
-    overflow-x: hidden;
+    &__content {
+      grid-area: details;
+      margin: 0px 10px;
+      overflow-x: hidden;
+    }
   }
 
   &__learn-more-btn {
