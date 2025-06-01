@@ -119,5 +119,10 @@
     "name": "Next.js",
     "icon-path": "icon-default.png",
     "type": "Front-end"
+  },
+  {
+    "name": "Zod",
+    "icon-path": "icon-zod.png",
+    "type": "Other"
   }
 ]

@@ -5,6 +5,7 @@ import Introduction from './Introduction/Introduction';
 import Projects from './Projects/Projects';
 import SkillSet from './SkillSet/SkillSet';
 import ProjectModal from './Projects/ProjectModal';
+import { projectData } from '../../data/projectsData';
 import './Home.scss';
 
 export default function Home() {
@@ -13,7 +14,6 @@ export default function Home() {
   // const { ref } = useScroll();
   const profilePicture = require('../../assets/images/yanako-picture.jpg');
   const skillSetData = require('../../data/skillSetData.json');
-  const projectData = require('../../data/projectsData.json');
 
   return (
     <main className='home'>

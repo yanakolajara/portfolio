@@ -23,10 +23,14 @@ function Projects(props) {
           const image = require(`../../../assets/images/${
             project['snapshot'] || 'image-placeholder.jpg'
           }`);
+          console.log('image', image);
           return (
             <article className='card container-glass'>
               <img
-                src={image}
+                src={
+                  image ||
+                  require(`../../../assets/images/image-placeholder.jpg`)
+                }
                 alt='project snapshot'
                 className='card__snapshot'
               />
