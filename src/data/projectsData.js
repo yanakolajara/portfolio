@@ -7,8 +7,8 @@ export const projectData = [
       'An AI-powered journaling platform that transforms daily reflections into personalized entries through natural conversations with a digital assistant. Scriptum blends intelligent summarization, emotional support, and secure multi-factor authentication to help users remember, reflect, and grow.',
     variables: {
       collaborative: false,
-      purpose: 'Pursuit',
-      creationDate: '03-12-2024',
+
+      creationDate: '01-05-2025',
     },
     tools: [
       'React.js',
@@ -23,12 +23,13 @@ export const projectData = [
       // 'Framer Motion',
     ],
     links: {
-      live: 'https://scriptum-ai.vercel.app',
-      frontEndRepo: 'https://github.com/yanakolajara/scriptum-client',
-      backEndRepo: 'https://github.com/yanakolajara/scriptum-server',
+      live: 'https://scriptum-app.vercel.app',
+      frontEndRepo: 'https://github.com/yanakolajara/Scriptum/tree/main/client',
+      backEndRepo: 'https://github.com/yanakolajara/Scriptum/tree/main/server',
       wireframes:
-        'https://www.figma.com/design/ITvAgUjjnxyIyTQ4iqq8Qm/Untitled?node-id=0-1&t=bl5K0l3agfdE6jLN-0',
-      managingTool: 'https://trello.com/b/FakeExampleTrelloLink/scriptum',
+        'https://www.figma.com/design/TiDNrdJ7KqqwAB6vD3AuEc/AI-Journal-Wireframes?node-id=0-1&p=f&t=ICA1iXmwfOrS8Z3I-0',
+      managingTool:
+        'https://www.notion.so/joinpursuit/Scriptum-15fd2512d7ba8051ac3cf98d95ead821?source=copy_link',
       other: [],
     },
   },
@@ -39,7 +40,7 @@ export const projectData = [
   //   description: '',
   //   variables: {
   //     collaborative: false,
-  //     purpose: 'Pursuit',
+
   //     creationDate: '03-12-2024',
   //   },
   //   tools: ['React.js', 'Express.js', 'Node.js', 'PostgreSQL', 'Sass'],
@@ -61,7 +62,7 @@ export const projectData = [
       "Habit Flow is a web application designed to help users build and maintain healthy habits effortlessly. Upon creating an account, users are presented with a selection of pre-created healthy habits, such as drinking enough water or sleeping more than 8 hours. Users can choose any number of these habits to focus on. The application allows users to track their progress over time by logging whether they completed the task each day. A unique feature of Habit Flow is the option to log attempts, allowing users to mark tasks as 'tried', acknowledging their effort even if they didn't fully complete the task.",
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '08-15-2023',
     },
     tools: [
@@ -91,7 +92,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '',
     },
     tools: ['React.js', 'Express.js', 'Node.js', 'PostgreSQL', 'Sass'],
@@ -111,7 +112,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: true,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '',
     },
     tools: [
@@ -142,7 +143,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '',
     },
     tools: ['React.js', 'Express.js', 'HTML', 'JavaScript', 'CSS'],
@@ -162,7 +163,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '',
     },
     tools: ['React.js', 'HTML', 'JavaScript', 'CSS'],
@@ -182,7 +183,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '',
     },
     tools: ['React.js', 'HTML', 'JavaScript', 'CSS', 'Cypress'],
@@ -202,7 +203,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '',
     },
     tools: ['React.js', 'HTML', 'JavaScript', 'CSS'],
@@ -222,7 +223,7 @@ export const projectData = [
     description: '',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '06-03-2023',
     },
     tools: ['React.js', 'HTML', 'JavaScript', 'CSS'],
@@ -244,7 +245,7 @@ export const projectData = [
       'Luxury Guitars is a guitar store management system build with pure HTML, CSS, and JavaScript.',
     variables: {
       collaborative: false,
-      purpose: 'Made for Pursuit Fellowship Bootcamp',
+
       creationDate: '05-22-2023',
     },
     tools: ['HTML', 'CSS', 'JavaScript'],
