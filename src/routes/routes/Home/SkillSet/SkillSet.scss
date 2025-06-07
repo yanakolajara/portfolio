@@ -1,0 +1,139 @@
+@import '../../../styles/main.scss';
+
+.skill-set {
+  background: linear-gradient(
+    135deg,
+    rgba($background-light, 0.9) 0%,
+    rgba($background, 0.8) 100%
+  );
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba($accent, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 70% 70%,
+        rgba($primary, 0.1) 0%,
+        transparent 50%
+      );
+    pointer-events: none;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, $accent 0%, $primary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba($primary, 0.3), 0 0 20px rgba($primary, 0.2),
+      0 0 30px rgba($primary, 0.1);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, $accent, $primary);
+      border-radius: 2px;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+
+    .skill-type {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $primary;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        flex-shrink: 0;
+      }
+
+      .skills-container {
+        flex: 1;
+        overflow-y: auto;
+        padding-right: 8px;
+
+        &::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgba($primary, 0.5);
+          border-radius: 2px;
+
+          &:hover {
+            background: rgba($primary, 0.7);
+          }
+        }
+
+        .skill-card {
+          display: flex;
+          align-items: center;
+          padding: 12px;
+          margin-bottom: 12px;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            border-radius: 4px;
+          }
+
+          .name {
+            color: $text-light;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
