@@ -37,13 +37,13 @@ export const projectData = [
   {
     name: 'Reverb clone',
     route: 'reverb-clone',
-    snapshot: 'ReverbLogo.svg',
+    snapshot: 'project_reverb-clone.png',
     description:
       'A clone of the Reverb.com homepage, with a focus on replicating the front-end design using plain CSS. The backend is currently under development.',
     version: 'Under development',
     variables: {
       collaborative: false,
-      creationDate: '06-01-2025',
+      creationDate: '04-01-2025',
     },
     tools: [
       'React.js',
