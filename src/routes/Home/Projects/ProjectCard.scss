@@ -189,14 +189,34 @@
         justify-content: space-between;
 
         .description {
+          flex: 1;
           color: $text-light;
           font-size: 0.875rem;
           line-height: 1.5;
-          margin: 0 0 16px 0;
+          margin: 0 0 0px 0;
           overflow: hidden;
           display: -webkit-box;
           -webkit-line-clamp: 6;
           -webkit-box-orient: vertical;
+          overflow-y: auto;
+          padding-right: 8px;
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: rgba($primary, 0.5);
+            border-radius: 2px;
+
+            &:hover {
+              background: rgba($primary, 0.7);
+            }
+          }
         }
 
         .project-meta {
@@ -222,6 +242,25 @@
           gap: 12px;
           height: 100%;
           align-content: start;
+          overflow-y: auto;
+          padding-right: 8px;
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: rgba($primary, 0.5);
+            border-radius: 2px;
+
+            &:hover {
+              background: rgba($primary, 0.7);
+            }
+          }
 
           .tech-item {
             display: flex;

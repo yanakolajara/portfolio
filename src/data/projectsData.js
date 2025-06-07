@@ -126,17 +126,32 @@ export const projectData = [
     name: 'Tuner App',
     route: 'tuner-app',
     snapshot: 'project_tuner-app.png',
-    description: '',
+    description:
+      'A full-stack application that allows users to create and manage their own music playlists. The application features a front-end built with React and a back-end powered by Express.js and PostgreSQL. Users can perform CRUD operations (Create, Read, Update, Delete) on songs, view a list of all songs, and see detailed information for each song. The app also includes features for sorting songs alphabetically or by favorite status.',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
-
       creationDate: '',
     },
-    tools: ['React.js', 'Express.js', 'Node.js', 'PostgreSQL', 'Sass'],
+    tools: [
+      'React.js',
+      'Express.js',
+      'Node.js',
+      'PostgreSQL',
+      'React Router',
+      'Axios',
+      'Cypress',
+      'Jest',
+      'Dotenv',
+      'Cors',
+      'pg-promise',
+    ],
     links: {
       live: '',
-      frontEndRepo: 'https://github.com/yanakolajara/tuner-app',
-      backEndRepo: 'https://github.com/yanakolajara/tuner-app',
+      frontEndRepo:
+        'https://github.com/yanakolajara/tuner-app/tree/main/front-end',
+      backEndRepo:
+        'https://github.com/yanakolajara/tuner-app/tree/main/back-end',
       wireframes: '',
       managingTool: '',
       other: [],
@@ -146,21 +161,21 @@ export const projectData = [
     name: 'Recipe App',
     route: 'recipe-app',
     snapshot: 'project_recipe-app.avif',
-    description: '',
+    description:
+      'A web application that allows users to view a list of recipes, see detailed information for each recipe, and manage reviews, including adding, updating, and deleting them.',
     version: 'v1.0.0',
     variables: {
       collaborative: true,
-
       creationDate: '',
     },
     tools: [
       'React.js',
       'Express.js',
+      'Node.js',
       'PostgreSQL',
-      'SQL',
-      'HTML',
-      'JavaScript',
-      'CSS',
+      'Bootstrap',
+      'Axios',
+      'React Router',
     ],
     links: {
       live: 'https://dreamy-biscochitos-50f554.netlify.app/',
@@ -178,14 +193,22 @@ export const projectData = [
     name: 'Budgrt App',
     route: 'budgrt-app',
     snapshot: 'project_budgrt-app.png',
-    description: '',
+    description:
+      'Budgtr is an application where people can log their financial transactions.',
     version: 'v1.0.0',
     variables: {
       collaborative: false,
-
       creationDate: '',
     },
-    tools: ['React.js', 'Express.js', 'HTML', 'JavaScript', 'CSS'],
+    tools: [
+      'React.js',
+      'Express.js',
+      'Axios',
+      'React Router',
+      'HTML',
+      'JavaScript',
+      'CSS',
+    ],
     links: {
       live: 'https://budgrt-ynk.netlify.app/',
       frontEndRepo: 'https://github.com/yanakolajara/budgrt-app-front-end',
@@ -199,16 +222,23 @@ export const projectData = [
     name: 'Youtube Clone',
     route: 'youtube-clone',
     snapshot: 'project_youtube-clone.png',
-    description: '',
-    version: 'v1.0.0',
+    description:
+      'A clone of the popular video-sharing platform, YouTube. This project was created as the final lab for Module 3 at Pursuit, an intensive 12-month software engineering fellowship. It was built in 14 hours using React and the YouTube Data API V3.',
+    version: '0.1.0',
     variables: {
       collaborative: false,
-
       creationDate: '',
     },
-    tools: ['React.js', 'HTML', 'JavaScript', 'CSS'],
+    tools: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'gh-pages',
+      'jest',
+      'dotenv',
+    ],
     links: {
-      live: '',
+      live: 'https://yanakolajara.github.io/youtube-clone',
       frontEndRepo: 'https://github.com/yanakolajara/youtube-clone',
       backEndRepo: null,
       wireframes: null,
@@ -216,39 +246,39 @@ export const projectData = [
       other: [],
     },
   },
-  {
-    name: 'Studio Ghibli',
-    route: 'studio-ghibli',
-    snapshot: 'project_studio_ghibli.png',
-    description: '',
-    version: 'v1.0.0',
-    variables: {
-      collaborative: false,
+  // {
+  //   name: 'Studio Ghibli',
+  //   route: 'studio-ghibli',
+  //   snapshot: 'project_studio_ghibli.png',
+  //   description: '',
+  //   version: 'v1.0.0',
+  //   variables: {
+  //     collaborative: false,
 
-      creationDate: '',
-    },
-    tools: ['React.js', 'HTML', 'JavaScript', 'CSS', 'Cypress'],
-    links: {
-      live: '',
-      frontEndRepo: 'https://github.com/yanakolajara/assessment-final-react',
-      backEndRepo: null,
-      wireframes: null,
-      managingTool: null,
-      other: [],
-    },
-  },
+  //     creationDate: '',
+  //   },
+  //   tools: ['React.js', 'HTML', 'JavaScript', 'CSS', 'Cypress'],
+  //   links: {
+  //     live: '',
+  //     frontEndRepo: 'https://github.com/yanakolajara/assessment-final-react',
+  //     backEndRepo: null,
+  //     wireframes: null,
+  //     managingTool: null,
+  //     other: [],
+  //   },
+  // },
   {
     name: 'Student Dashboard',
     route: 'student-dashboard',
     snapshot: 'project_student-dashboard.jpg',
-    description: '',
-    version: 'v1.0.0',
+    description:
+      'A student dashboard that displays data in an easy-to-understand and user-friendly format. The project features a student list that can be filtered by cohort, with expandable sections for more detailed information about each student. It includes features like tracking codewars progress, certifications, and a 1-on-1 notes section.',
+    version: '0.1.0',
     variables: {
       collaborative: false,
-
       creationDate: '',
     },
-    tools: ['React.js', 'HTML', 'JavaScript', 'CSS'],
+    tools: ['React.js', 'JavaScript', 'HTML', 'CSS', 'jest'],
     links: {
       live: '',
       frontEndRepo: 'https://github.com/yanakolajara/project-student-dashboard',
@@ -262,18 +292,17 @@ export const projectData = [
     name: 'Bird Sanctuary',
     route: 'bird-sanctuary',
     snapshot: 'project_bird-sanctuary.png',
-    description: '',
-    version: 'v1.0.0',
+    description:
+      'A bird sanctuary donation app built with React. Users can view birds, add them to a cart, and receive discounts and bonus items based on the number of birds and the total cost. The project includes a checkout form that resets the cart upon successful submission.',
+    version: '0.1.0',
     variables: {
       collaborative: false,
-
       creationDate: '06-03-2023',
     },
-    tools: ['React.js', 'HTML', 'JavaScript', 'CSS'],
+    tools: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Cypress'],
     links: {
       live: '',
-      frontEndRepo:
-        'https://github.com/yanakolajara/project-bird-sanctuary.git',
+      frontEndRepo: 'https://github.com/yanakolajara/project-bird-sanctuary',
       backEndRepo: null,
       wireframes: null,
       managingTool: null,
