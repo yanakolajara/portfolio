@@ -1,10 +1,28 @@
 import React, { useState } from 'react';
 import { getLinkProperties } from '../../../utils/data.utils.js';
+import ImageModal from './ImageModal';
 import './ProjectCard.scss';
 
 export default function ProjectCard({ project, skillSetData }) {
   const [activeTab, setActiveTab] = useState('overview');
-  const image = require(`../../../assets/images/${project.snapshot || 'image-placeholder.jpg'}`);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  // For now, we'll use the single image, but this structure supports multiple images
+  const projectImages = [project.snapshot || 'image-placeholder.jpg'];
+  const currentImage = require(`../../../assets/images/${projectImages[currentImageIndex]}`);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % projectImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + projectImages.length) % projectImages.length);
+  };
+
+  const openImageModal = () => {
+    setIsModalOpen(true);
+  };
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -48,7 +66,7 @@ export default function ProjectCard({ project, skillSetData }) {
       case 'links':
         return (
           <div className="tab-content links">
-            <div className="links-grid">
+            <div className="links-container">
               {Object.entries(project.links).map(([key, value]) => {
                 if (key === 'other' || !value) return null;
                 const { name, buttonStyle, icon } = getLinkProperties(key);
@@ -76,48 +94,86 @@ export default function ProjectCard({ project, skillSetData }) {
   };
 
   return (
-    <article className="project-card">
-      <div className="card-header">
-        <img
-          src={image}
-          alt={project.name}
-          className="project-image"
-        />
-        <div className="project-title-section">
-          <h3 className="project-title">{project.name}</h3>
-          <div className="project-badges">
-            {project.variables?.collaborative && (
-              <span className="badge collaborative">Collaborative</span>
+    <>
+      <article className="project-card">
+        <div className="card-header">
+          <div className="image-container">
+            <img
+              src={currentImage}
+              alt={project.name}
+              className="project-image"
+              onClick={openImageModal}
+            />
+            
+            {projectImages.length > 1 && (
+              <>
+                <button className="carousel-btn prev" onClick={prevImage}>
+                  &#8249;
+                </button>
+                <button className="carousel-btn next" onClick={nextImage}>
+                  &#8250;
+                </button>
+              </>
             )}
-            <span className="badge status">{project.version}</span>
+            
+            {projectImages.length > 1 && (
+              <div className="image-indicators">
+                {projectImages.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`indicator ${index === currentImageIndex ? 'active' : ''}`}
+                    onClick={() => setCurrentImageIndex(index)}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+          
+          <div className="project-title-section">
+            <h3 className="project-title">{project.name}</h3>
+            <div className="project-badges">
+              {project.variables?.collaborative && (
+                <span className="badge collaborative">Collaborative</span>
+              )}
+              <span className="badge status">{project.version}</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="card-navigation">
-        <button
-          className={`nav-tab ${activeTab === 'overview' ? 'active' : ''}`}
-          onClick={() => setActiveTab('overview')}
-        >
-          Overview
-        </button>
-        <button
-          className={`nav-tab ${activeTab === 'tech' ? 'active' : ''}`}
-          onClick={() => setActiveTab('tech')}
-        >
-          Tech Stack
-        </button>
-        <button
-          className={`nav-tab ${activeTab === 'links' ? 'active' : ''}`}
-          onClick={() => setActiveTab('links')}
-        >
-          Links
-        </button>
-      </div>
+        <div className="card-navigation">
+          <button
+            className={`nav-tab ${activeTab === 'overview' ? 'active' : ''}`}
+            onClick={() => setActiveTab('overview')}
+          >
+            Overview
+          </button>
+          <button
+            className={`nav-tab ${activeTab === 'tech' ? 'active' : ''}`}
+            onClick={() => setActiveTab('tech')}
+          >
+            Tech Stack
+          </button>
+          <button
+            className={`nav-tab ${activeTab === 'links' ? 'active' : ''}`}
+            onClick={() => setActiveTab('links')}
+          >
+            Links
+          </button>
+        </div>
 
-      <div className="card-content">
-        {renderTabContent()}
-      </div>
-    </article>
+        <div className="card-content">
+          {renderTabContent()}
+        </div>
+      </article>
+
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        images={projectImages}
+        currentIndex={currentImageIndex}
+        onImageChange={setCurrentImageIndex}
+        projectName={project.name}
+      />
+    </>
   );
 }

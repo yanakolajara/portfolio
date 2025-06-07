@@ -33,6 +33,10 @@
       background-clip: text;
       margin-bottom: 12px;
       position: relative;
+      text-shadow: 
+        0 0 10px rgba($primary, 0.3),
+        0 0 20px rgba($primary, 0.2),
+        0 0 30px rgba($primary, 0.1);
 
       &::after {
         content: '';

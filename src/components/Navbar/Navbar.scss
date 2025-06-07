@@ -10,7 +10,7 @@
   gap: 8px;
   height: 70px;
   margin-top: 20px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 35px;
@@ -18,7 +18,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.5);
     border-color: rgba($primary, 0.3);
   }
 }
@@ -46,7 +46,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, $primary, $secondary);
+    background: linear-gradient(135deg, rgba($primary, 0.8), rgba($secondary, 0.8));
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 16px;
@@ -84,10 +84,12 @@
     .icon {
       color: white;
       transform: scale(1.1);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     .text {
       color: white;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
     }
   }
 
