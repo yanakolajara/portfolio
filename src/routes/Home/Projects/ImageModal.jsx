@@ -55,7 +55,7 @@ export default function ImageModal({
           
           {images.length > 1 && (
             <>
-              <button className="modal-carousel-btn prev" onClick={prevImage}>
+              <button className="modal-carousel-btn prev\" onClick={prevImage}>
                 &#8249;
               </button>
               <button className="modal-carousel-btn next" onClick={nextImage}>

@@ -107,7 +107,7 @@ export default function ProjectCard({ project, skillSetData }) {
             
             {projectImages.length > 1 && (
               <>
-                <button className="carousel-btn prev" onClick={prevImage}>
+                <button className="carousel-btn prev\" onClick={prevImage}>
                   &#8249;
                 </button>
                 <button className="carousel-btn next" onClick={nextImage}>
