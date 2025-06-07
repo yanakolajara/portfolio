@@ -196,6 +196,7 @@
           margin: 0 0 0px 0;
           overflow: hidden;
           display: -webkit-box;
+          line-clamp: 6;
           -webkit-line-clamp: 6;
           -webkit-box-orient: vertical;
           overflow-y: auto;
