@@ -3,8 +3,9 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $primary-font;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -18,36 +19,74 @@ body {
   font-family: $primary-font;
   color: $text-light;
   background: $background;
+  overflow-x: hidden;
 }
 
 section {
-  padding: 60px 10vw;
+  padding: 80px 5vw;
+  
+  @media (max-width: 768px) {
+    padding: 60px 4vw;
+  }
 }
 
 h1 {
   text-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.7);
   font-size: 48px;
   margin: 0px;
+  font-weight: 700;
 }
+
 h2 {
   text-shadow: 0px 0px 7px rgba($color: #000000, $alpha: 0.5);
   font-size: 32px;
   margin: 0px;
+  font-weight: 600;
 }
 
 h3 {
   text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.3);
+  font-weight: 600;
 }
 
 p {
   text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.3);
   font-size: 18px;
   margin: 4px;
+  font-weight: 400;
 }
 
 button {
+  font-family: $primary-font;
+  
   &:hover {
     cursor: pointer;
-    filter: brightness(1.2);
+  }
+}
+
+a {
+  font-family: $primary-font;
+}
+
+// Smooth scrolling for anchor links
+html {
+  scroll-behavior: smooth;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba($background-light, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($primary, 0.6);
+  border-radius: 4px;
+  
+  &:hover {
+    background: rgba($primary, 0.8);
   }
 }

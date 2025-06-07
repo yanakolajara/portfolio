@@ -2,51 +2,102 @@
 
 .navbar {
   position: fixed;
-  z-index: 5;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  height: 80px;
+  justify-content: center;
+  gap: 8px;
+  height: 70px;
   margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  padding: 0 24px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba($primary, 0.3);
+  }
 }
 
 .navbar-option {
-  display: grid;
-  grid-template-rows: 75% 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   min-width: 80px;
-  height: 70px;
-  margin: 0px 3px;
-  border: 0px;
-  border-radius: 0.5rem;
-  background: 0;
+  height: 60px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 16px;
+  background: transparent;
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, $primary, $secondary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+  }
+
   .icon {
     color: $text-light;
-    font-size: 35px;
-    align-self: center;
-    justify-self: center;
+    font-size: 24px;
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
   }
+
   .text {
-    align-self: end;
-    justify-self: center;
-    margin: 0px;
-    font-size: 14px;
-    color: $text-light;
+    font-size: 12px;
+    color: rgba($text-light, 0.8);
     text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin: 0;
   }
 
   &:hover {
-    background-color: $accent;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+    
+    &::before {
+      opacity: 1;
+    }
+
     .icon {
       color: white;
-      text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.5);
+      transform: scale(1.1);
     }
+
     .text {
       color: white;
-      text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.5);
     }
   }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.contact-links {
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }

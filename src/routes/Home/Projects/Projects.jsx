@@ -1,58 +1,28 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 import './Projects.scss';
 
-function Projects(props) {
-  const {
-    projectData,
-    // renderCard,
-    setIsModalOpen,
-    setProjectModalData,
-  } = props;
-  const openModal = (e, data) => {
-    e.preventDefault();
-    setIsModalOpen(true);
-    setProjectModalData(data);
-  };
-  // console.log('REF HERE', ref);
-
+function Projects({ projectData, skillSetData }) {
   return (
-    <div id='projects' className='projects'>
-      <h2 className='title'>Projects</h2>
-      <section className='projects-container'>
-        {projectData.map((project) => {
-          const image = require(`../../../assets/images/${
-            project['snapshot'] || 'image-placeholder.jpg'
-          }`);
-          console.log('image', image);
-          return (
-            <article className='card container-glass'>
-              <img
-                src={
-                  image ||
-                  require(`../../../assets/images/image-placeholder.jpg`)
-                }
-                alt='project snapshot'
-                className='card__snapshot'
-              />
-
-              <button
-                className='card__learn-more-btn'
-                onClick={(e) => openModal(e, project)}
-              >
-                {project.name}
-              </button>
-            </article>
-          );
-          // return renderCard({
-          //   ...project,
-          //   image,
-          //   setIsModalOpen,
-          //   setProjectModalData,
-          // });
-        })}
-      </section>
-    </div>
+    <section id='projects' className='projects'>
+      <div className="section-header">
+        <h2 className='section-title'>Featured Projects</h2>
+        <p className="section-subtitle">
+          Explore my latest work and technical implementations
+        </p>
+      </div>
+      
+      <div className='projects-grid'>
+        {projectData.map((project, index) => (
+          <ProjectCard 
+            key={project.route || index}
+            project={project}
+            skillSetData={skillSetData}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 
-export default React.forwardRef(Projects);
+export default Projects;
