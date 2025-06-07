@@ -5,6 +5,7 @@ export const projectData = [
     snapshot: 'project_scriptum.png',
     description:
       'An AI-powered journaling platform that transforms daily reflections into personalized entries through natural conversations with a digital assistant. Scriptum blends intelligent summarization, emotional support, and secure multi-factor authentication to help users remember, reflect, and grow.',
+    version: 'Under development',
     variables: {
       collaborative: false,
 
@@ -33,6 +34,40 @@ export const projectData = [
       other: [],
     },
   },
+  {
+    name: 'Reverb clone',
+    route: 'reverb-clone',
+    snapshot: 'ReverbLogo.svg',
+    description:
+      'A clone of the Reverb.com homepage, with a focus on replicating the front-end design using plain CSS. The backend is currently under development.',
+    version: 'Under development',
+    variables: {
+      collaborative: false,
+      creationDate: '06-01-2025',
+    },
+    tools: [
+      'React.js',
+      'Java',
+      'Spring Boot',
+      'PostgreSQL',
+      'Node.js',
+      'Vite',
+      'Axios',
+      'React Router',
+      'CSS',
+    ],
+    links: {
+      live: '',
+      frontEndRepo:
+        'https://github.com/yanakolajara/l3_v3_e-commerce_site/tree/main/client',
+      backEndRepo:
+        'https://github.com/yanakolajara/l3_v3_e-commerce_site/tree/main/server',
+      wireframes: '',
+      managingTool: '',
+      other: [],
+    },
+  },
+
   // {
   //   name: 'Get it done',
   //   route: 'get-it-done',
@@ -60,6 +95,8 @@ export const projectData = [
     snapshot: 'project_habit-flow.png',
     description:
       "Habit Flow is a web application designed to help users build and maintain healthy habits effortlessly. Upon creating an account, users are presented with a selection of pre-created healthy habits, such as drinking enough water or sleeping more than 8 hours. Users can choose any number of these habits to focus on. The application allows users to track their progress over time by logging whether they completed the task each day. A unique feature of Habit Flow is the option to log attempts, allowing users to mark tasks as 'tried', acknowledging their effort even if they didn't fully complete the task.",
+
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
@@ -110,6 +147,7 @@ export const projectData = [
     route: 'recipe-app',
     snapshot: 'project_recipe-app.avif',
     description: '',
+    version: 'v1.0.0',
     variables: {
       collaborative: true,
 
@@ -141,6 +179,7 @@ export const projectData = [
     route: 'budgrt-app',
     snapshot: 'project_budgrt-app.png',
     description: '',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
@@ -161,6 +200,7 @@ export const projectData = [
     route: 'youtube-clone',
     snapshot: 'project_youtube-clone.png',
     description: '',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
@@ -181,6 +221,7 @@ export const projectData = [
     route: 'studio-ghibli',
     snapshot: 'project_studio_ghibli.png',
     description: '',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
@@ -201,6 +242,7 @@ export const projectData = [
     route: 'student-dashboard',
     snapshot: 'project_student-dashboard.jpg',
     description: '',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
@@ -221,6 +263,7 @@ export const projectData = [
     route: 'bird-sanctuary',
     snapshot: 'project_bird-sanctuary.png',
     description: '',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
@@ -243,6 +286,7 @@ export const projectData = [
     snapshot: 'project_luxury-guitars.JPG',
     description:
       'Luxury Guitars is a guitar store management system build with pure HTML, CSS, and JavaScript.',
+    version: 'v1.0.0',
     variables: {
       collaborative: false,
 
